@@ -5,10 +5,9 @@ branches:
  - master
  - develop
 
-xcode_project: OpenPokeMap.xcodeproj
-xcode_scheme: OpenPokeMap
+xcode_project: OpenPokeMap
 osx_image: xcode7.3
 xcode_sdk: iphonesimulator9.3
 
 script:
-- xcodebuild clean build test -project OpenPokeMap.xcodeproj -list
+- xcodebuild clean build test -project OpenPokeMap.xcodeproj
