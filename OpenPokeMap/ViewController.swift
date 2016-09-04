@@ -57,7 +57,8 @@ class ViewController: UIViewController {
     func respondToChallenge(challenge: String) {
         print("Challenge passed successfully \(challenge)")
         let json = JSON(challenge)
-        print(json)
+        print(json) 
+
         
 //        struct Request : MapInitializable {
 //            let method: String

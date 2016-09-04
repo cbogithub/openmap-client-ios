@@ -18,6 +18,9 @@
 		17892F161D71C02B003F3CBB /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */; };
 		17AC020C1D78590F00DC4086 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC01FD1D78590700DC4086 /* SwiftyJSON.framework */; };
 		17AC02141D789D4300DC4086 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC02131D789D4300DC4086 /* iAd.framework */; };
+		17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 17FA359D1D7C5A150037C4EC /* base_stats.json */; };
+		17FA35A61D7C5B1B0037C4EC /* base_stat_parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */; };
+		17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
 		17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		17AC02131D789D4300DC4086 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		17FA359D1D7C5A150037C4EC /* base_stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = base_stats.json; path = ../base_stats.json; sourceTree = "<group>"; };
+		17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = base_stat_parser.swift; sourceTree = "<group>"; };
+		17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculate_IV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 		177E62A61D708F7500842A62 /* OpenPokeMap */ = {
 			isa = PBXGroup;
 			children = (
+				17FA35A71D7C5B290037C4EC /* IV shit */,
 				177E62A71D708F7500842A62 /* AppDelegate.swift */,
 				177E62A91D708F7500842A62 /* ViewController.swift */,
 				177E62BA1D70993B00842A62 /* AboutPageController.swift */,
@@ -156,6 +163,16 @@
 				17AC02091D78590700DC4086 /* SwiftyJSON tvOS Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		17FA35A71D7C5B290037C4EC /* IV shit */ = {
+			isa = PBXGroup;
+			children = (
+				17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */,
+				17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */,
+				17FA359D1D7C5A150037C4EC /* base_stats.json */,
+			);
+			path = "IV shit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +296,7 @@
 				177E62B21D708F7500842A62 /* LaunchScreen.storyboard in Resources */,
 				177E62AF1D708F7500842A62 /* Assets.xcassets in Resources */,
 				177E62AD1D708F7500842A62 /* Main.storyboard in Resources */,
+				17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				177E62AA1D708F7500842A62 /* ViewController.swift in Sources */,
+				17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */,
 				17393C711D79711F00F03BFA /* WebSocket.swift in Sources */,
 				177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */,
+				17FA35A61D7C5B1B0037C4EC /* base_stat_parser.swift in Sources */,
 				177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OpenPokeMap/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OpenPokeMap/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
