@@ -20,9 +20,10 @@ class CalculateIV {
         
     }
     
-    func doEquation(Pokemon: String, CP: Int, HP: Int, DustPrice: Double, PoweredUp: Bool ) {
+    func doEquation(Pokemon: String, CP: Int, HP: Int, DustPrice: Int, PoweredUp: Bool ) {
         
         BaseStats().GetBaseStats(Pokemon)
+        print("Pokemon: \(Pokemon), CP: \(CP), HP: \(HP), DustPrice: \(DustPrice), Is powered up? \(PoweredUp)")
         
     }
     

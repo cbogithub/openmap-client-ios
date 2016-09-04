@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UC2-6E-Rp7">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -82,7 +81,7 @@
         <!--IV calculation-->
         <scene sceneID="mpO-lq-hmk">
             <objects>
-                <viewController id="Flz-tk-FVv" sceneMemberID="viewController">
+                <viewController id="Flz-tk-FVv" customClass="ivViewController" customModule="OpenPokeMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D0W-uy-Ffo"/>
                         <viewControllerLayoutGuide type="bottom" id="ilf-Ik-Mx4"/>
@@ -147,6 +146,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIa-jS-C3P">
                                 <rect key="frame" x="262" y="324" width="82" height="30"/>
                                 <state key="normal" title="Calculate IV"/>
+                                <connections>
+                                    <action selector="calcIV:" destination="Flz-tk-FVv" eventType="touchUpInside" id="H2A-oa-QVS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,6 +156,13 @@
                     <navigationItem key="navigationItem" title="IV calculation" id="T4E-nr-2Pq">
                         <barButtonItem key="rightBarButtonItem" title="Help" id="Poh-i1-ayS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="PokemonCP" destination="0z9-rL-AOC" id="gJE-k2-o8j"/>
+                        <outlet property="PokemonDustPrice" destination="OzX-Ot-1uP" id="TLF-g9-EnB"/>
+                        <outlet property="PokemonHP" destination="nUI-LK-Dm5" id="JVk-Yx-qST"/>
+                        <outlet property="PokemonName" destination="11n-S7-tAo" id="JSC-CJ-an6"/>
+                        <outlet property="PoweredUpSwitch" destination="xQA-AE-D6C" id="ZgY-wz-5Q8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTH-Pd-YyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

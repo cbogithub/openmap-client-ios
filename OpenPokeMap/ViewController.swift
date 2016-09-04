@@ -11,6 +11,7 @@ import SwiftyJSON
 //import Quark
 
 class ViewController: UIViewController {
+    
 
     let socket = WebSocket("ws://localhost:8080/websocket")
     
