@@ -426,6 +426,8 @@
 				TargetAttributes = {
 					2E4FEFDA19575BE100351305 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = N43Z5AL5JX;
+						DevelopmentTeamName = "Jamie Bishop (Personal Team)";
 					};
 					2E4FEFE519575BE100351305 = {
 						CreatedOnToolsVersion = 6.0;

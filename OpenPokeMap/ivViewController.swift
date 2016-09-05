@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ivViewController: UIViewController, UITextFieldDelegate {
+class ivViewController: UITableViewController, UITextFieldDelegate {
     
     @IBOutlet weak var PokemonName: UITextField!
     @IBOutlet weak var PokemonCP: UITextField!
@@ -17,20 +17,45 @@ class ivViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var PoweredUpSwitch: UISwitch!
 
     @IBAction func calcIV(sender: AnyObject) {
-        
-        let Pokemon = PokemonName.text
+        let Pokemon = String(PokemonName.text)
         let CP = Int(PokemonCP.text!)
         let HP = Int(PokemonHP.text!)
         let DustPrice = Int(PokemonDustPrice.text!)
         let PoweredUp = PoweredUpSwitch.on
-        
-        CalculateIV().doEquation(Pokemon!, CP: CP!, HP: HP!, DustPrice: DustPrice!, PoweredUp: PoweredUp)
+
+        CalculateIV().doEquation(Pokemon, CP: CP!, HP: HP!, DustPrice: DustPrice!, PoweredUp: PoweredUp)
     }
     
     @IBAction func userTappedBackground(sender: AnyObject) {
         view.endEditing(true)
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.05)
+        let selectionView = UIView()
+        selectionView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+        cell.selectedBackgroundView = selectionView
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let view = view as? UITableViewHeaderFooterView {
+            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            view.detailTextLabel?.textColor = color
+            view.textLabel?.textColor = color
+        }
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        if let view = view as? UITableViewHeaderFooterView {
+            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            view.detailTextLabel?.textColor = color
+            view.textLabel?.textColor = color
+        }
+    }
     
     func initializeTextFields() {
         PokemonName.delegate = self
@@ -49,6 +74,7 @@ class ivViewController: UIViewController, UITextFieldDelegate {
     // MARK: UITextFieldDelegate events and related methods
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
         if string.characters.count == 0 {
             return true
         }
@@ -62,7 +88,7 @@ class ivViewController: UIViewController, UITextFieldDelegate {
             return prospectiveText.characters.count <= 20
         case PokemonCP:
             return prospectiveText.containsOnlyCharactersIn("0123456789") &&
-                prospectiveText.characters.count <= 4
+                prospectiveText.characters.count < 4
         case PokemonHP:
             return prospectiveText.containsOnlyCharactersIn("0123456789") &&
                 prospectiveText.characters.count <= 4
@@ -80,9 +106,17 @@ class ivViewController: UIViewController, UITextFieldDelegate {
         return true;
     }
     
+    func SendAlert(Message: String, Title: String, Close: String) {
+            let alertView = UIAlertController(title: Title, message: Message, preferredStyle: .Alert)
+            alertView.addAction(UIAlertAction(title: Close, style: .Default, handler: nil))
+            presentViewController(alertView, animated: true, completion: nil)
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
+        self.tableView.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
         initializeTextFields()
     }
     

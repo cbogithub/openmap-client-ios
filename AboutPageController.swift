@@ -35,9 +35,35 @@ class AboutPageController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.05)
+        let selectionView = UIView()
+        selectionView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+        cell.selectedBackgroundView = selectionView
     }
+    
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let view = view as? UITableViewHeaderFooterView {
+            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            view.detailTextLabel?.textColor = color
+            view.textLabel?.textColor = color
+        }
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        if let view = view as? UITableViewHeaderFooterView {
+            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            view.detailTextLabel?.textColor = color
+            view.textLabel?.textColor = color
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
+        self.tableView.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
+    }
+    
 
 }
 
