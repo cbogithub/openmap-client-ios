@@ -47,7 +47,6 @@ class BaseStats {
                 CalculateIV().GetBase(BaseAttack, BaseDefense: BaseDefense, BaseStamina: BaseStamina)
                 
             } else {
-                ivViewController().SendAlert("A error occured", Title: "Error", Close: "Dismiss")
             }
                 
         }

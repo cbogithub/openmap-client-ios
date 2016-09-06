@@ -22,8 +22,33 @@ class ivViewController: UITableViewController, UITextFieldDelegate {
         let HP = Int(PokemonHP.text!)
         let DustPrice = Int(PokemonDustPrice.text!)
         let PoweredUp = PoweredUpSwitch.on
-
-        CalculateIV().doEquation(Pokemon, CP: CP!, HP: HP!, DustPrice: DustPrice!, PoweredUp: PoweredUp)
+        let enabled = false
+        
+        if enabled {
+            if Pokemon.isEmpty {
+                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+                alertController.show()
+            } else if CP == nil {
+                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+                alertController.show()
+            } else if HP == nil {
+                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+                alertController.show()
+            } else if DustPrice == nil {
+                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+                alertController.show()
+            } else {
+                CalculateIV().doEquation(Pokemon, CP: CP!, HP: HP!, DustPrice: DustPrice!, PoweredUp: PoweredUp)
+            }
+        } else {
+            let alertController = UIAlertController(title: "Error", message: "This feature has not been implmented in this build.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+            alertController.show()
+        }
     }
     
     @IBAction func userTappedBackground(sender: AnyObject) {
@@ -105,13 +130,6 @@ class ivViewController: UITableViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true;
     }
-    
-    func SendAlert(Message: String, Title: String, Close: String) {
-            let alertView = UIAlertController(title: Title, message: Message, preferredStyle: .Alert)
-            alertView.addAction(UIAlertAction(title: Close, style: .Default, handler: nil))
-            presentViewController(alertView, animated: true, completion: nil)
-    }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()

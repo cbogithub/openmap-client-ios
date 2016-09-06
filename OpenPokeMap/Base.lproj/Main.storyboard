@@ -44,7 +44,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="EQs-eJ-ZXz">
             <objects>
-                <tabBarController id="UC2-6E-Rp7" sceneMemberID="viewController">
+                <tabBarController id="UC2-6E-Rp7" customClass="TabBarController" customModule="OpenPokeMap" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hIy-Dc-7sa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -258,7 +258,7 @@
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection footerTitle="" id="La9-DJ-czg">
+                            <tableViewSection footerTitle="This app is in beta. A pogointel project" id="La9-DJ-czg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="9Fg-AA-pBZ" detailTextLabel="M13-Qo-4lJ" style="IBUITableViewCellStyleSubtitle" id="88Y-Bh-XBb">
                                         <rect key="frame" x="0.0" y="99" width="600" height="44"/>

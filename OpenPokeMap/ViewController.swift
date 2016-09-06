@@ -101,3 +101,50 @@ class ViewController: UIViewController {
         return true
     }
 }
+
+extension UIAlertController {
+    
+    func show() {
+        present(true, completion: nil)
+    }
+    
+    func present(animated: Bool, completion: (() -> Void)?) {
+        if let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController {
+            presentFromController(rootVC, animated: animated, completion: completion)
+        }
+    }
+    
+    private func presentFromController(controller: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        if let navVC = controller as? UINavigationController,
+            let visibleVC = navVC.visibleViewController {
+            presentFromController(visibleVC, animated: animated, completion: completion)
+        } else
+            if let tabVC = controller as? UITabBarController,
+                let selectedVC = tabVC.selectedViewController {
+                presentFromController(selectedVC, animated: animated, completion: completion)
+            } else {
+                controller.presentViewController(self, animated: animated, completion: completion);
+        }
+    }
+}
+// Add anywhere in your app
+extension UIImage {
+    func imageWithColor(tintColor: UIColor) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        
+        let context = UIGraphicsGetCurrentContext()! as CGContextRef
+        CGContextTranslateCTM(context, 0, self.size.height)
+        CGContextScaleCTM(context, 1.0, -1.0);
+        CGContextSetBlendMode(context, .Normal)
+        
+        let rect = CGRectMake(0, 0, self.size.width, self.size.height) as CGRect
+        CGContextClipToMask(context, rect, self.CGImage)
+        tintColor.setFill()
+        CGContextFillRect(context, rect)
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext() as UIImage
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
+}

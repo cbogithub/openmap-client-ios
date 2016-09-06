@@ -24,7 +24,6 @@ class CalculateIV {
         
         BaseStats().GetBaseStats(Pokemon!)
         print("Pokemon: \(Pokemon), CP: \(CP), HP: \(HP), DustPrice: \(DustPrice), Is powered up? \(PoweredUp)")
-        ivViewController().SendAlert("A error occured", Title: "Error", Close: "Dismiss")
 
     }
     

@@ -10,7 +10,6 @@
 		170007471D7DB3AF00BE789D /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170007461D7DB3AF00BE789D /* HelpController.swift */; };
 		170007491D7DB51400BE789D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170007481D7DB51400BE789D /* TabBarController.swift */; };
 		17393C711D79711F00F03BFA /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17393C701D79711F00F03BFA /* WebSocket.swift */; };
-		17393C7E1D7971D800F03BFA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17393C7D1D7971D800F03BFA /* libz.tbd */; };
 		173E0C441D7C8D3D0015ACA1 /* ivViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */; };
 		173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */; };
 		177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A71D708F7500842A62 /* AppDelegate.swift */; };
@@ -20,8 +19,8 @@
 		177E62B21D708F7500842A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62B01D708F7500842A62 /* LaunchScreen.storyboard */; };
 		177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62BA1D70993B00842A62 /* AboutPageController.swift */; };
 		17892F161D71C02B003F3CBB /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */; };
-		17AC020C1D78590F00DC4086 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC01FD1D78590700DC4086 /* SwiftyJSON.framework */; };
-		17AC02141D789D4300DC4086 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC02131D789D4300DC4086 /* iAd.framework */; };
+		179AC8761D7F2B8300525AA1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AC8751D7F2B8300525AA1 /* libz.tbd */; };
+		17AC020C1D78590F00DC4086 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC01FD1D78590700DC4086 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 17FA359D1D7C5A150037C4EC /* base_stats.json */; };
 		17FA35A61D7C5B1B0037C4EC /* base_stat_parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */; };
 		17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */; };
@@ -77,20 +76,12 @@
 			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
 			remoteInfo = "SwiftyJSON tvOS Tests";
 		};
-		17AC020A1D78590C00DC4086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		170007461D7DB3AF00BE789D /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		170007481D7DB51400BE789D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		17393C701D79711F00F03BFA /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
-		17393C7D1D7971D800F03BFA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ivViewController.swift; path = ../ivViewController.swift; sourceTree = "<group>"; };
 		173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		177E62A41D708F7500842A62 /* OpenPokeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPokeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,8 +93,8 @@
 		177E62B31D708F7500842A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177E62BA1D70993B00842A62 /* AboutPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageController.swift; path = ../AboutPageController.swift; sourceTree = "<group>"; };
 		17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
+		179AC8751D7F2B8300525AA1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
-		17AC02131D789D4300DC4086 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		17FA359D1D7C5A150037C4EC /* base_stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = base_stats.json; path = ../base_stats.json; sourceTree = "<group>"; };
 		17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = base_stat_parser.swift; sourceTree = "<group>"; };
 		17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculate_IV.swift; sourceTree = "<group>"; };
@@ -114,8 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17393C7E1D7971D800F03BFA /* libz.tbd in Frameworks */,
-				17AC02141D789D4300DC4086 /* iAd.framework in Frameworks */,
+				179AC8761D7F2B8300525AA1 /* libz.tbd in Frameworks */,
 				17AC020C1D78590F00DC4086 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,8 +116,7 @@
 		177E629B1D708F7500842A62 = {
 			isa = PBXGroup;
 			children = (
-				17393C7D1D7971D800F03BFA /* libz.tbd */,
-				17AC02131D789D4300DC4086 /* iAd.framework */,
+				179AC8751D7F2B8300525AA1 /* libz.tbd */,
 				17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */,
 				177E62A61D708F7500842A62 /* OpenPokeMap */,
 				177E62A51D708F7500842A62 /* Products */,
@@ -201,7 +190,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				17AC020B1D78590C00DC4086 /* PBXTargetDependency */,
 			);
 			name = OpenPokeMap;
 			productName = OpenPokeMap;
@@ -220,6 +208,7 @@
 				TargetAttributes = {
 					177E62A31D708F7500842A62 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AHEHG4CE9W;
 					};
 				};
 			};
@@ -334,14 +323,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		17AC020B1D78590C00DC4086 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SwiftyJSON iOS";
-			targetProxy = 17AC020A1D78590C00DC4086 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		177E62AB1D708F7500842A62 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -449,11 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OpenPokeMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -461,11 +445,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OpenPokeMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
