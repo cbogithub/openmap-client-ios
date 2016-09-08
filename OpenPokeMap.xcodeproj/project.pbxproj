@@ -12,6 +12,7 @@
 		17393C711D79711F00F03BFA /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17393C701D79711F00F03BFA /* WebSocket.swift */; };
 		173E0C441D7C8D3D0015ACA1 /* ivViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */; };
 		173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */; };
+		176F393E1D8070D800CCF31A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F393D1D8070D800CCF31A /* SwiftyJSON.swift */; };
 		177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A71D708F7500842A62 /* AppDelegate.swift */; };
 		177E62AA1D708F7500842A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A91D708F7500842A62 /* ViewController.swift */; };
 		177E62AD1D708F7500842A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62AB1D708F7500842A62 /* Main.storyboard */; };
@@ -20,63 +21,10 @@
 		177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62BA1D70993B00842A62 /* AboutPageController.swift */; };
 		17892F161D71C02B003F3CBB /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */; };
 		179AC8761D7F2B8300525AA1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AC8751D7F2B8300525AA1 /* libz.tbd */; };
-		17AC020C1D78590F00DC4086 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC01FD1D78590700DC4086 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 17FA359D1D7C5A150037C4EC /* base_stats.json */; };
 		17FA35A61D7C5B1B0037C4EC /* base_stat_parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */; };
 		17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		17AC01FC1D78590700DC4086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
-		};
-		17AC01FE1D78590700DC4086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E4FEFE619575BE100351305;
-			remoteInfo = "SwiftyJSON iOS Tests";
-		};
-		17AC02001D78590700DC4086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
-			remoteInfo = "SwiftyJSON OSX";
-		};
-		17AC02021D78590700DC4086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
-			remoteInfo = "SwiftyJSON OSX Tests";
-		};
-		17AC02041D78590700DC4086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
-			remoteInfo = "SwiftyJSON watchOS";
-		};
-		17AC02061D78590700DC4086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7236B4F61BAC14150020529B;
-			remoteInfo = "SwiftyJSON tvOS";
-		};
-		17AC02081D78590700DC4086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
-			remoteInfo = "SwiftyJSON tvOS Tests";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		170007461D7DB3AF00BE789D /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
@@ -84,6 +32,7 @@
 		17393C701D79711F00F03BFA /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ivViewController.swift; path = ../ivViewController.swift; sourceTree = "<group>"; };
 		173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		176F393D1D8070D800CCF31A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		177E62A41D708F7500842A62 /* OpenPokeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPokeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177E62A71D708F7500842A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177E62A91D708F7500842A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +43,6 @@
 		177E62BA1D70993B00842A62 /* AboutPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageController.swift; path = ../AboutPageController.swift; sourceTree = "<group>"; };
 		17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
 		179AC8751D7F2B8300525AA1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		17FA359D1D7C5A150037C4EC /* base_stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = base_stats.json; path = ../base_stats.json; sourceTree = "<group>"; };
 		17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = base_stat_parser.swift; sourceTree = "<group>"; };
 		17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculate_IV.swift; sourceTree = "<group>"; };
@@ -106,7 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				179AC8761D7F2B8300525AA1 /* libz.tbd in Frameworks */,
-				17AC020C1D78590F00DC4086 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				179AC8751D7F2B8300525AA1 /* libz.tbd */,
-				17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */,
 				177E62A61D708F7500842A62 /* OpenPokeMap */,
 				177E62A51D708F7500842A62 /* Products */,
 			);
@@ -141,6 +87,7 @@
 				177E62BA1D70993B00842A62 /* AboutPageController.swift */,
 				170007461D7DB3AF00BE789D /* HelpController.swift */,
 				17393C701D79711F00F03BFA /* WebSocket.swift */,
+				176F393D1D8070D800CCF31A /* SwiftyJSON.swift */,
 				177E62AB1D708F7500842A62 /* Main.storyboard */,
 				177E62B01D708F7500842A62 /* LaunchScreen.storyboard */,
 				177E62AE1D708F7500842A62 /* Assets.xcassets */,
@@ -148,20 +95,6 @@
 				177E62B31D708F7500842A62 /* Info.plist */,
 			);
 			path = OpenPokeMap;
-			sourceTree = "<group>";
-		};
-		17AC01F31D78590700DC4086 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				17AC01FD1D78590700DC4086 /* SwiftyJSON.framework */,
-				17AC01FF1D78590700DC4086 /* SwiftyJSON iOS Tests.xctest */,
-				17AC02011D78590700DC4086 /* SwiftyJSON.framework */,
-				17AC02031D78590700DC4086 /* SwiftyJSON OSX Tests.xctest */,
-				17AC02051D78590700DC4086 /* SwiftyJSON.framework */,
-				17AC02071D78590700DC4086 /* SwiftyJSON.framework */,
-				17AC02091D78590700DC4086 /* SwiftyJSON tvOS Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		17FA35A71D7C5B290037C4EC /* IV shit */ = {
@@ -203,7 +136,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "nullpixel Development";
 				TargetAttributes = {
 					177E62A31D708F7500842A62 = {
@@ -223,70 +156,12 @@
 			mainGroup = 177E629B1D708F7500842A62;
 			productRefGroup = 177E62A51D708F7500842A62 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 17AC01F31D78590700DC4086 /* Products */;
-					ProjectRef = 17AC01F21D78590700DC4086 /* SwiftyJSON.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				177E62A31D708F7500842A62 /* OpenPokeMap */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		17AC01FD1D78590700DC4086 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 17AC01FC1D78590700DC4086 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		17AC01FF1D78590700DC4086 /* SwiftyJSON iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON iOS Tests.xctest";
-			remoteRef = 17AC01FE1D78590700DC4086 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		17AC02011D78590700DC4086 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 17AC02001D78590700DC4086 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		17AC02031D78590700DC4086 /* SwiftyJSON OSX Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON OSX Tests.xctest";
-			remoteRef = 17AC02021D78590700DC4086 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		17AC02051D78590700DC4086 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 17AC02041D78590700DC4086 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		17AC02071D78590700DC4086 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 17AC02061D78590700DC4086 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		17AC02091D78590700DC4086 /* SwiftyJSON tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON tvOS Tests.xctest";
-			remoteRef = 17AC02081D78590700DC4086 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		177E62A21D708F7500842A62 /* Resources */ = {
@@ -311,6 +186,7 @@
 				177E62AA1D708F7500842A62 /* ViewController.swift in Sources */,
 				17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */,
 				173E0C441D7C8D3D0015ACA1 /* ivViewController.swift in Sources */,
+				176F393E1D8070D800CCF31A /* SwiftyJSON.swift in Sources */,
 				170007491D7DB51400BE789D /* TabBarController.swift in Sources */,
 				17393C711D79711F00F03BFA /* WebSocket.swift in Sources */,
 				173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */,
@@ -357,8 +233,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -380,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,8 +280,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -419,9 +299,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -432,6 +313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AHEHG4CE9W;
 				INFOPLIST_FILE = OpenPokeMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -447,6 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AHEHG4CE9W;
 				INFOPLIST_FILE = OpenPokeMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

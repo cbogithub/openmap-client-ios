@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 //import Quark
 
 class ViewController: UIViewController {
