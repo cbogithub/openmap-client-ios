@@ -414,13 +414,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Rcm-id-dae"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="This means you entered a invalid pokemon. Pokemon names must begin with a capital letter, and be spelt exactly!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-s3-VlS">
                                 <rect key="frame" x="20" y="148" width="560" height="55"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="EZq-kC-gY6"/>
                                 </constraints>
@@ -439,7 +439,7 @@
                             </label>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Please ensure all the values you entered are correct." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM0-0I-lFj">
                                 <rect key="frame" x="20" y="265" width="560" height="55"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="QXi-8W-qRB"/>
                                 </constraints>
@@ -458,13 +458,13 @@
                             </label>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="I know. I am lazy." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64y-Ly-ZC5">
                                 <rect key="frame" x="20" y="357" width="560" height="55"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xrj-ET-Mlu" firstAttribute="top" secondItem="sM0-0I-lFj" secondAttribute="bottom" constant="8" symbolic="YES" id="7kB-cK-CnP"/>
                             <constraint firstItem="Gdi-f4-47d" firstAttribute="top" secondItem="MuY-s3-VlS" secondAttribute="bottom" constant="33" id="8Ww-J8-I0t"/>
