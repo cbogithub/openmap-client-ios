@@ -1,9 +1,9 @@
 PODS:
-  - Starscream (1.1.3)
+  - SwiftWebSocket (2.6.3)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - Starscream (~> 1.1.3)
+  - SwiftWebSocket
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
@@ -16,9 +16,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
-  Starscream: d662732354b40dd19ed1ece3e3c44c80b536b83c
+  SwiftWebSocket: 76e3ade5d716a80440dbf859b39b05d842f80d03
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: cb81dc824aa5c35eea160cb3cb3992be59accb89
+PODFILE CHECKSUM: 706901cd29534e48a8799d374dbf2c8a5fc0019a
 
 COCOAPODS: 1.0.1

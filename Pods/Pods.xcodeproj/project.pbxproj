@@ -7,105 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01CA3EC56262A1BE855756FF897943FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		1376374E97F124213039B917249E88B5 /* Pods-OpenPokeMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6086B5DD1C0E51FE4715A40E77148 /* Pods-OpenPokeMap-dummy.m */; };
-		13ACA35503C43D769033D2D5794615A3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0813DA1F91E6465D940389B245DB41E4 /* SwiftyJSON.swift */; };
-		35AA209164A70BE52D3AA68401B2FD63 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD25231745CBB7A0DE8AE144F32C35 /* SwiftyJSON-dummy.m */; };
-		4FC1C12026D5CCED2F7B6358E349A864 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A444149F18F886FD0A1E23B45D6671 /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		74FCDF8A105AD0F720248200CDC27253 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6718FA411202146721CBD6539BA6A /* Starscream-dummy.m */; };
-		8B539F0825717CA3783EAF98F6931421 /* Pods-OpenPokeMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A756BDC2C0989ACE15F40DD70617B7F /* Pods-OpenPokeMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91D8702AD5E3A1120400BA3EF50905A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		947DDB1657CC74A72FBA1D3B19DCB6C9 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D47E6B74B427A4904D75990D1C34E829 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEBF516FE723EEFF321BD60F090377D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		E402FE276018B737C8D5356223BC6F0F /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D64F48FA18233694918281C87E0266 /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F21EBD033435818E304B31880411CEF8 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B923F40E09322629BC57536AFBDAB00 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11A195E10621C6B433777843DFB84FD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		1F5EDFBE765E1667F685F65ADC1C19D2 /* SwiftWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BADB2BD2F4BF976D5902C1614533C83D /* SwiftWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30B339922A01E9C1142D10632585353D /* Pods-OpenPokeMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A756BDC2C0989ACE15F40DD70617B7F /* Pods-OpenPokeMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E1CB1363782FBFC8CC6E91C86440A72 /* Pods-OpenPokeMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6086B5DD1C0E51FE4715A40E77148 /* Pods-OpenPokeMap-dummy.m */; };
+		573CE3BF2E2C2DDCADD78C0DBD8098C2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC945970A89FA2911DEE501E0FC27BE6 /* SwiftyJSON.swift */; };
+		57DA2CD1257479180BBF3E724328AC72 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4ED7D4B54D84EF4902CB6A87101DC3 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6500232ED38B28D7C2DF95E55EE5A6B6 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F73FFF4DE5281AED9BE957B5F72E503 /* WebSocket.swift */; };
+		BE95E6618389AC31F1EB97B52D835998 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C5605132751198BBD9D8E5B8EA00B639 /* SwiftWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4457F4545011C6A36A76B07C57338ABC /* SwiftWebSocket-dummy.m */; };
+		D03973B89121FF566EA23727BED7885A /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88999E77EDD37FE17FFA23D133C41E /* SwiftyJSON-dummy.m */; };
+		D3BA3027D02E503FC7EE5252A383A299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A5EC000D8E905A3548FB85C2BFE44B9 /* PBXContainerItemProxy */ = {
+		8B03CAD72B84C08E3AD8E4245BAD6A04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B5FA1E9FD6E592D97A4AFD290937BCC;
-			remoteInfo = SwiftyJSON;
+			remoteGlobalIDString = E8F3E8C15E4977E51AD0B57CD283E879;
+			remoteInfo = SwiftWebSocket;
 		};
-		EC52C147BA90B87613ABB3D75F9E4A3A /* PBXContainerItemProxy */ = {
+		C0FFD7EBF6B8857D443E2806991B375C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EB7C0D67F05A052CC401B641F1CA4E93;
-			remoteInfo = Starscream;
+			remoteGlobalIDString = CAC19610C32808B5CF86592281251923;
+			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0813DA1F91E6465D940389B245DB41E4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		0F0AD0445D068E37E1C8498A3BF6150D /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		18C6718FA411202146721CBD6539BA6A /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
-		1EC0280E5CCCCD96F81E63B562E157DD /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		2A14E4E75C0921B8190FF7805BDB1994 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		312294DADA3EB94F9C68344672B8333D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3506239DA7ED12022124672864661896 /* Pods-OpenPokeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenPokeMap.release.xcconfig"; sourceTree = "<group>"; };
-		38A444149F18F886FD0A1E23B45D6671 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SSLSecurity.swift; sourceTree = "<group>"; };
-		47C7E36F0C36BF6A9B7F26250E6F35CA /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
-		47C81FB96686C0BE581D0FC3090AFC0D /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
-		5AEC6C2628AC9CE69E2591A41614D566 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F73FFF4DE5281AED9BE957B5F72E503 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
+		3F88999E77EDD37FE17FFA23D133C41E /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		4457F4545011C6A36A76B07C57338ABC /* SwiftWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftWebSocket-dummy.m"; sourceTree = "<group>"; };
+		60392B3E892351F796C80C7ADAB2F2F8 /* SwiftWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-prefix.pch"; sourceTree = "<group>"; };
+		6366C4931460223BBE00A52F5668B692 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		6A756BDC2C0989ACE15F40DD70617B7F /* Pods-OpenPokeMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenPokeMap-umbrella.h"; sourceTree = "<group>"; };
-		6B923F40E09322629BC57536AFBDAB00 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		6DCD25231745CBB7A0DE8AE144F32C35 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		6B17F76D4AF60398AE85A98658FFFB71 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		7336C81D428D0A92EF381D6C2458BA4A /* Pods-OpenPokeMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpenPokeMap.modulemap"; sourceTree = "<group>"; };
 		7880591818936BC9CFF0A7F609814F96 /* Pods-OpenPokeMap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenPokeMap-frameworks.sh"; sourceTree = "<group>"; };
-		87D64F48FA18233694918281C87E0266 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
+		8A4ED7D4B54D84EF4902CB6A87101DC3 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		8F15F72AF6A04E296E345A7D9E07197B /* SwiftWebSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftWebSocket.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97DD4B39553BD9CBBE70398559D860B3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3659E7D23CE8F4B7AF0275851D2906C /* Pods-OpenPokeMap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenPokeMap-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A9F4E9EF7E88EA9D7AC3BADB2B9B8D7B /* Pods_OpenPokeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenPokeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40084091F80F45C250231A5C09632BE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41484CE018157BB88D674C4503CF38A /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		AC5C11E3A1F27E630A48F554D5C0F4F8 /* SwiftWebSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftWebSocket.xcconfig; sourceTree = "<group>"; };
+		B8E1D5CF4CF1DD42CA84A44C9D4CBD09 /* SwiftWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADB2BD2F4BF976D5902C1614533C83D /* SwiftWebSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-umbrella.h"; sourceTree = "<group>"; };
+		BBC0FBA9B368E42AF61D5DC49D3F11CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBC6086B5DD1C0E51FE4715A40E77148 /* Pods-OpenPokeMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenPokeMap-dummy.m"; sourceTree = "<group>"; };
+		BC945970A89FA2911DEE501E0FC27BE6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CFB3E404A66EE13E14582416D200A72C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D47E6B74B427A4904D75990D1C34E829 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
 		D9E81D906A9A52018E708896CD2ABE90 /* Pods-OpenPokeMap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenPokeMap-acknowledgements.plist"; sourceTree = "<group>"; };
 		DC2E117C86CAB0D2343CA56F899029C3 /* Pods-OpenPokeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenPokeMap.debug.xcconfig"; sourceTree = "<group>"; };
 		DC5A905C62CA54A98B797147A73FDD19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6671F9532A947F40918CF9A0D44F70F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED0A84AABA966E6DE908E1D84ABB429E /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Starscream.modulemap; sourceTree = "<group>"; };
 		F5482B6B584FB8435693D6F15F376E80 /* Pods-OpenPokeMap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenPokeMap-resources.sh"; sourceTree = "<group>"; };
+		F6B332BF87AD91C0E1AF30D8616928E9 /* Pods_OpenPokeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenPokeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00EE6D2366D694D41F0D7093786CFD2F /* Frameworks */ = {
+		13CF3F1FD85D82BDAB70F9E7DDE95319 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01CA3EC56262A1BE855756FF897943FA /* Foundation.framework in Frameworks */,
+				D3BA3027D02E503FC7EE5252A383A299 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0B3294AB0309F2AFF6DFFD6B4C90FDE /* Frameworks */ = {
+		1F98EA30FE9017B6A5D59BAC7F59F435 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D8702AD5E3A1120400BA3EF50905A4 /* Foundation.framework in Frameworks */,
+				11A195E10621C6B433777843DFB84FD4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE47A22CC82BD0B6E08EA40D906E4AD4 /* Frameworks */ = {
+		B1A39E29A70D67E338871C2CAEE0B086 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBF516FE723EEFF321BD60F090377D7 /* Foundation.framework in Frameworks */,
+				BE95E6618389AC31F1EB97B52D835998 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C03422930E80D7BB92C5C859589F09F /* Pods */ = {
+		001B85B4DE50918F360B56E03367D72C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B60722EF6A0F9DCD2D7C6D03F8B362CD /* Starscream */,
-				48BC61B70DBB2FA057A57FF358488F76 /* SwiftyJSON */,
+				312294DADA3EB94F9C68344672B8333D /* Info.plist */,
+				8F15F72AF6A04E296E345A7D9E07197B /* SwiftWebSocket.modulemap */,
+				AC5C11E3A1F27E630A48F554D5C0F4F8 /* SwiftWebSocket.xcconfig */,
+				4457F4545011C6A36A76B07C57338ABC /* SwiftWebSocket-dummy.m */,
+				60392B3E892351F796C80C7ADAB2F2F8 /* SwiftWebSocket-prefix.pch */,
+				BADB2BD2F4BF976D5902C1614533C83D /* SwiftWebSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftWebSocket";
+			sourceTree = "<group>";
+		};
+		09390EB3BE6AD43451462076C8ECCBFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBB6EC39DAE96A0366B806BB56154C /* SwiftWebSocket */,
+				256FD4D1CC082D1EBD3978271E7C4F0C /* SwiftyJSON */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		256FD4D1CC082D1EBD3978271E7C4F0C /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BC945970A89FA2911DEE501E0FC27BE6 /* SwiftyJSON.swift */,
+				3303AF266FFDA92DE12D7F2107232C76 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		3303AF266FFDA92DE12D7F2107232C76 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBC0FBA9B368E42AF61D5DC49D3F11CC /* Info.plist */,
+				6B17F76D4AF60398AE85A98658FFFB71 /* SwiftyJSON.modulemap */,
+				A41484CE018157BB88D674C4503CF38A /* SwiftyJSON.xcconfig */,
+				3F88999E77EDD37FE17FFA23D133C41E /* SwiftyJSON-dummy.m */,
+				6366C4931460223BBE00A52F5668B692 /* SwiftyJSON-prefix.pch */,
+				8A4ED7D4B54D84EF4902CB6A87101DC3 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -116,27 +151,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		48BC61B70DBB2FA057A57FF358488F76 /* SwiftyJSON */ = {
+		4ECBB6EC39DAE96A0366B806BB56154C /* SwiftWebSocket */ = {
 			isa = PBXGroup;
 			children = (
-				0813DA1F91E6465D940389B245DB41E4 /* SwiftyJSON.swift */,
-				9BE8F84C840D474BB60E62D4A8259C63 /* Support Files */,
+				3F73FFF4DE5281AED9BE957B5F72E503 /* WebSocket.swift */,
+				001B85B4DE50918F360B56E03367D72C /* Support Files */,
 			);
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		57072CFE2F97B4E7645A18D9267BA425 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CFB3E404A66EE13E14582416D200A72C /* Info.plist */,
-				ED0A84AABA966E6DE908E1D84ABB429E /* Starscream.modulemap */,
-				47C81FB96686C0BE581D0FC3090AFC0D /* Starscream.xcconfig */,
-				18C6718FA411202146721CBD6539BA6A /* Starscream-dummy.m */,
-				47C7E36F0C36BF6A9B7F26250E6F35CA /* Starscream-prefix.pch */,
-				D47E6B74B427A4904D75990D1C34E829 /* Starscream-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Starscream";
+			path = SwiftWebSocket;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -144,8 +165,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				0C03422930E80D7BB92C5C859589F09F /* Pods */,
-				F85CD7E81E9AFAE73002AC04F2B15E72 /* Products */,
+				09390EB3BE6AD43451462076C8ECCBFB /* Pods */,
+				9CCF1092F280DD93F0111CC943AA4D20 /* Products */,
 				91028480DD9C1FA46EF35E6171F7203F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -158,18 +179,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9BE8F84C840D474BB60E62D4A8259C63 /* Support Files */ = {
+		9CCF1092F280DD93F0111CC943AA4D20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6671F9532A947F40918CF9A0D44F70F /* Info.plist */,
-				2A14E4E75C0921B8190FF7805BDB1994 /* SwiftyJSON.modulemap */,
-				1EC0280E5CCCCD96F81E63B562E157DD /* SwiftyJSON.xcconfig */,
-				6DCD25231745CBB7A0DE8AE144F32C35 /* SwiftyJSON-dummy.m */,
-				0F0AD0445D068E37E1C8498A3BF6150D /* SwiftyJSON-prefix.pch */,
-				6B923F40E09322629BC57536AFBDAB00 /* SwiftyJSON-umbrella.h */,
+				F6B332BF87AD91C0E1AF30D8616928E9 /* Pods_OpenPokeMap.framework */,
+				B8E1D5CF4CF1DD42CA84A44C9D4CBD09 /* SwiftWebSocket.framework */,
+				A40084091F80F45C250231A5C09632BE /* SwiftyJSON.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9CD0D4726CC0F5B0893FAA05F2714204 /* Pods-OpenPokeMap */ = {
@@ -190,16 +207,6 @@
 			path = "Target Support Files/Pods-OpenPokeMap";
 			sourceTree = "<group>";
 		};
-		B60722EF6A0F9DCD2D7C6D03F8B362CD /* Starscream */ = {
-			isa = PBXGroup;
-			children = (
-				38A444149F18F886FD0A1E23B45D6671 /* SSLSecurity.swift */,
-				87D64F48FA18233694918281C87E0266 /* WebSocket.swift */,
-				57072CFE2F97B4E7645A18D9267BA425 /* Support Files */,
-			);
-			path = Starscream;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,53 +215,62 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F85CD7E81E9AFAE73002AC04F2B15E72 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A9F4E9EF7E88EA9D7AC3BADB2B9B8D7B /* Pods_OpenPokeMap.framework */,
-				5AEC6C2628AC9CE69E2591A41614D566 /* Starscream.framework */,
-				97DD4B39553BD9CBBE70398559D860B3 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		47F9DE4C5235CC6A75B7FFFDED47CC8E /* Headers */ = {
+		6FB423205F2A002450239F1253054BB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				947DDB1657CC74A72FBA1D3B19DCB6C9 /* Starscream-umbrella.h in Headers */,
+				30B339922A01E9C1142D10632585353D /* Pods-OpenPokeMap-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62F2E647C761FB7F925325F37A392BC6 /* Headers */ = {
+		E3AF2AF01E677E00C402C9E0502E79E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B539F0825717CA3783EAF98F6931421 /* Pods-OpenPokeMap-umbrella.h in Headers */,
+				1F5EDFBE765E1667F685F65ADC1C19D2 /* SwiftWebSocket-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CABB3CBBE6FC1536E882DE47047C7FC7 /* Headers */ = {
+		F65EB07839FD30BB09D421CA77FB2085 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F21EBD033435818E304B31880411CEF8 /* SwiftyJSON-umbrella.h in Headers */,
+				57DA2CD1257479180BBF3E724328AC72 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9B5FA1E9FD6E592D97A4AFD290937BCC /* SwiftyJSON */ = {
+		729E7050FC301774E64998FAB5D59030 /* Pods-OpenPokeMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33181E89D9E102443348336708D59F21 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = A6F6720F90BAC970D8CC8647BBA77B97 /* Build configuration list for PBXNativeTarget "Pods-OpenPokeMap" */;
 			buildPhases = (
-				AA3323CF68E5326B66A56818C12E7C93 /* Sources */,
-				FE47A22CC82BD0B6E08EA40D906E4AD4 /* Frameworks */,
-				CABB3CBBE6FC1536E882DE47047C7FC7 /* Headers */,
+				725ABE76A2FC1703015F7F73FB7CD355 /* Sources */,
+				13CF3F1FD85D82BDAB70F9E7DDE95319 /* Frameworks */,
+				6FB423205F2A002450239F1253054BB3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470FD7ED15BBA159FE19B798DA306883 /* PBXTargetDependency */,
+				C5C75670E6E327725CE4F2D74E21B57C /* PBXTargetDependency */,
+			);
+			name = "Pods-OpenPokeMap";
+			productName = "Pods-OpenPokeMap";
+			productReference = F6B332BF87AD91C0E1AF30D8616928E9 /* Pods_OpenPokeMap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CAC19610C32808B5CF86592281251923 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 666F2E41D3D0176E3552AFEBB7ABF8A8 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				F15FF4B2B406339AE1365A548BB2AEC5 /* Sources */,
+				1F98EA30FE9017B6A5D59BAC7F59F435 /* Frameworks */,
+				F65EB07839FD30BB09D421CA77FB2085 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -262,43 +278,24 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 97DD4B39553BD9CBBE70398559D860B3 /* SwiftyJSON.framework */;
+			productReference = A40084091F80F45C250231A5C09632BE /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C03984507C16DACBC547CF926D1534F1 /* Pods-OpenPokeMap */ = {
+		E8F3E8C15E4977E51AD0B57CD283E879 /* SwiftWebSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66E28B7668A4EA60E55A461BFB99BD14 /* Build configuration list for PBXNativeTarget "Pods-OpenPokeMap" */;
+			buildConfigurationList = EF662FA018EA2672D927CAE20810C89B /* Build configuration list for PBXNativeTarget "SwiftWebSocket" */;
 			buildPhases = (
-				A21943444130D4DC4236A6522EB28C80 /* Sources */,
-				00EE6D2366D694D41F0D7093786CFD2F /* Frameworks */,
-				62F2E647C761FB7F925325F37A392BC6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8E4101F99BBAA36F6E73E7D40F1F1C4 /* PBXTargetDependency */,
-				1F5CA213CD2E7C28ED3BF2CE34F21D0A /* PBXTargetDependency */,
-			);
-			name = "Pods-OpenPokeMap";
-			productName = "Pods-OpenPokeMap";
-			productReference = A9F4E9EF7E88EA9D7AC3BADB2B9B8D7B /* Pods_OpenPokeMap.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EB7C0D67F05A052CC401B641F1CA4E93 /* Starscream */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 099CA1A7A0BE8F392CDDA81BEB50279B /* Build configuration list for PBXNativeTarget "Starscream" */;
-			buildPhases = (
-				AA03D3E737A9E47C93EE2B87F8188412 /* Sources */,
-				E0B3294AB0309F2AFF6DFFD6B4C90FDE /* Frameworks */,
-				47F9DE4C5235CC6A75B7FFFDED47CC8E /* Headers */,
+				976CAA566B2D6121D4BB82C09A7BCDB3 /* Sources */,
+				B1A39E29A70D67E338871C2CAEE0B086 /* Frameworks */,
+				E3AF2AF01E677E00C402C9E0502E79E4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Starscream;
-			productName = Starscream;
-			productReference = 5AEC6C2628AC9CE69E2591A41614D566 /* Starscream.framework */;
+			name = SwiftWebSocket;
+			productName = SwiftWebSocket;
+			productReference = B8E1D5CF4CF1DD42CA84A44C9D4CBD09 /* SwiftWebSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -309,11 +306,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					EB7C0D67F05A052CC401B641F1CA4E93 = {
-						LastSwiftMigration = 0800;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -323,131 +315,65 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F85CD7E81E9AFAE73002AC04F2B15E72 /* Products */;
+			productRefGroup = 9CCF1092F280DD93F0111CC943AA4D20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C03984507C16DACBC547CF926D1534F1 /* Pods-OpenPokeMap */,
-				EB7C0D67F05A052CC401B641F1CA4E93 /* Starscream */,
-				9B5FA1E9FD6E592D97A4AFD290937BCC /* SwiftyJSON */,
+				729E7050FC301774E64998FAB5D59030 /* Pods-OpenPokeMap */,
+				E8F3E8C15E4977E51AD0B57CD283E879 /* SwiftWebSocket */,
+				CAC19610C32808B5CF86592281251923 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A21943444130D4DC4236A6522EB28C80 /* Sources */ = {
+		725ABE76A2FC1703015F7F73FB7CD355 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1376374E97F124213039B917249E88B5 /* Pods-OpenPokeMap-dummy.m in Sources */,
+				3E1CB1363782FBFC8CC6E91C86440A72 /* Pods-OpenPokeMap-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA03D3E737A9E47C93EE2B87F8188412 /* Sources */ = {
+		976CAA566B2D6121D4BB82C09A7BCDB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FC1C12026D5CCED2F7B6358E349A864 /* SSLSecurity.swift in Sources */,
-				74FCDF8A105AD0F720248200CDC27253 /* Starscream-dummy.m in Sources */,
-				E402FE276018B737C8D5356223BC6F0F /* WebSocket.swift in Sources */,
+				C5605132751198BBD9D8E5B8EA00B639 /* SwiftWebSocket-dummy.m in Sources */,
+				6500232ED38B28D7C2DF95E55EE5A6B6 /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA3323CF68E5326B66A56818C12E7C93 /* Sources */ = {
+		F15FF4B2B406339AE1365A548BB2AEC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35AA209164A70BE52D3AA68401B2FD63 /* SwiftyJSON-dummy.m in Sources */,
-				13ACA35503C43D769033D2D5794615A3 /* SwiftyJSON.swift in Sources */,
+				D03973B89121FF566EA23727BED7885A /* SwiftyJSON-dummy.m in Sources */,
+				573CE3BF2E2C2DDCADD78C0DBD8098C2 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F5CA213CD2E7C28ED3BF2CE34F21D0A /* PBXTargetDependency */ = {
+		470FD7ED15BBA159FE19B798DA306883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftWebSocket;
+			target = E8F3E8C15E4977E51AD0B57CD283E879 /* SwiftWebSocket */;
+			targetProxy = 8B03CAD72B84C08E3AD8E4245BAD6A04 /* PBXContainerItemProxy */;
+		};
+		C5C75670E6E327725CE4F2D74E21B57C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 9B5FA1E9FD6E592D97A4AFD290937BCC /* SwiftyJSON */;
-			targetProxy = 0A5EC000D8E905A3548FB85C2BFE44B9 /* PBXContainerItemProxy */;
-		};
-		B8E4101F99BBAA36F6E73E7D40F1F1C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Starscream;
-			target = EB7C0D67F05A052CC401B641F1CA4E93 /* Starscream */;
-			targetProxy = EC52C147BA90B87613ABB3D75F9E4A3A /* PBXContainerItemProxy */;
+			target = CAC19610C32808B5CF86592281251923 /* SwiftyJSON */;
+			targetProxy = C0FFD7EBF6B8857D443E2806991B375C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		014E3D88BA2CDCF7742A351C2E32A792 /* Debug */ = {
+		3F8C6ACD33C2D822888E2D9DA5E6588A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC2E117C86CAB0D2343CA56F899029C3 /* Pods-OpenPokeMap.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OpenPokeMap/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OpenPokeMap;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1612A7E2BBB5CFC5E1D51FC8DFABF51B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47C81FB96686C0BE581D0FC3090AFC0D /* Starscream.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Starscream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1A09B896FDFE881059A0F01B60F01316 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3506239DA7ED12022124672864661896 /* Pods-OpenPokeMap.release.xcconfig */;
+			baseConfigurationReference = A41484CE018157BB88D674C4503CF38A /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -458,20 +384,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OpenPokeMap/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OpenPokeMap;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -516,14 +439,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 2.3;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		789B49C83FEDD617289D3B57A79F7F18 /* Debug */ = {
+		6430ED4AB4ECEA922E68190821EAD881 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EC0280E5CCCCD96F81E63B562E157DD /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = A41484CE018157BB88D674C4503CF38A /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -552,9 +474,43 @@
 			};
 			name = Debug;
 		};
-		AAA9E7746464B8DAF2AD43B49A266CA8 /* Release */ = {
+		86B9E7489724E0C672E813656A89E6D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47C81FB96686C0BE581D0FC3090AFC0D /* Starscream.xcconfig */;
+			baseConfigurationReference = DC2E117C86CAB0D2343CA56F899029C3 /* Pods-OpenPokeMap.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenPokeMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenPokeMap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A66EB78CA3779C66D3147FB19114A838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC5C11E3A1F27E630A48F554D5C0F4F8 /* SwiftWebSocket.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -565,14 +521,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWebSocket/SwiftWebSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWebSocket/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftWebSocket/SwiftWebSocket.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Starscream;
+				PRODUCT_NAME = SwiftWebSocket;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 2.3;
@@ -581,6 +537,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A9A8CD9B21C5BB9048AEFFF7599114C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC5C11E3A1F27E630A48F554D5C0F4F8 /* SwiftWebSocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftWebSocket/SwiftWebSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftWebSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftWebSocket/SwiftWebSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftWebSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -615,15 +602,14 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 2.3;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FB8030F690CF25C40C7C9B81451028B9 /* Release */ = {
+		D0F91DE70F018E18EEF7DE312C49B386 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EC0280E5CCCCD96F81E63B562E157DD /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 3506239DA7ED12022124672864661896 /* Pods-OpenPokeMap.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -634,17 +620,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenPokeMap/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenPokeMap;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -654,15 +643,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		099CA1A7A0BE8F392CDDA81BEB50279B /* Build configuration list for PBXNativeTarget "Starscream" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1612A7E2BBB5CFC5E1D51FC8DFABF51B /* Debug */,
-				AAA9E7746464B8DAF2AD43B49A266CA8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -672,20 +652,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33181E89D9E102443348336708D59F21 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		666F2E41D3D0176E3552AFEBB7ABF8A8 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				789B49C83FEDD617289D3B57A79F7F18 /* Debug */,
-				FB8030F690CF25C40C7C9B81451028B9 /* Release */,
+				6430ED4AB4ECEA922E68190821EAD881 /* Debug */,
+				3F8C6ACD33C2D822888E2D9DA5E6588A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66E28B7668A4EA60E55A461BFB99BD14 /* Build configuration list for PBXNativeTarget "Pods-OpenPokeMap" */ = {
+		A6F6720F90BAC970D8CC8647BBA77B97 /* Build configuration list for PBXNativeTarget "Pods-OpenPokeMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				014E3D88BA2CDCF7742A351C2E32A792 /* Debug */,
-				1A09B896FDFE881059A0F01B60F01316 /* Release */,
+				86B9E7489724E0C672E813656A89E6D3 /* Debug */,
+				D0F91DE70F018E18EEF7DE312C49B386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF662FA018EA2672D927CAE20810C89B /* Build configuration list for PBXNativeTarget "SwiftWebSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A8CD9B21C5BB9048AEFFF7599114C1 /* Debug */,
+				A66EB78CA3779C66D3147FB19114A838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

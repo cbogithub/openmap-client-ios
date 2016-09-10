@@ -6,14 +6,13 @@
 //  Copyright © 2016 nullpixel Development. All rights reserved.
 //
 
+import SwiftWebSocket
 import UIKit
-import Starscream
-//import Quark
 
-class ViewController: UIViewController, WebSocketDelegate {
+class ViewController: UIViewController {
     
 
-    let socket = WebSocket(url: NSURL(string: "ws://localhost:8080/websocket")!)
+    let socket = WebSocket("ws://localhost:8080/websocket")
     
     @IBOutlet weak var webView: UIWebView!
    
@@ -25,66 +24,35 @@ class ViewController: UIViewController, WebSocketDelegate {
         webView.scrollView.maximumZoomScale = 1.0;
         webView.scrollView.minimumZoomScale = 1.0;
         webView.loadRequest(request)
-        
-    //MARK: Connect to WebSocket
-        socket.delegate = self
-        socket.connect()
     }
     
     // MARK: Websocket Delegate Methods.
     
-    func websocketDidConnect(socket: WebSocket) {
-        print("Connected to WebSocket.")
-    }
-    
-    func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
-        print("websocket is disconnected: \(error?.localizedDescription)")
-        socket.connect()
-    }
-    
-    func websocketDidReceiveMessage(socket: WebSocket, text: String) {
-        print("Recived a string. Parsing. \(text)")
-        respondToChallenge(text)
-    }
-
-    func websocketDidReceiveData(socket: WebSocket, data: NSData) {
-        print("got some data: \(data.length)")
+    func ConnectToSocket () {
+        var messageNum = 0
+        let ws = socket
+        ws.event.open = {
+            print("Conected.")
+        }
+        ws.event.close = { code, reason, clean in
+            print("Closed.")
+            self.ConnectToSocket()
+        }
+        ws.event.error = { error in
+            print("error \(error)")
+        }
+        ws.event.message = { message in
+            if let text = message as? String {
+                print("recv: \(text)")
+                self.respondToChallenge(text)
+            }
+        }
     }
     
     func respondToChallenge(challenge: String) {
         print("Challenge passed successfully \(challenge)")
         let json = JSON(challenge)
-        print(json) 
-
-        
-//        struct Request : MapInitializable {
-//            let method: String
-//            let contentType: String
-//            let userAgent: String
-//            let data: String
-//            
-//            init(map: Map) throws {
-//                method = try map.get("meth")
-//                contentType = try map.get("cont")
-//                userAgent = try map.get("user")
-//                data = try map.get("data")
-//            }
-//        }
-//        
-//        let wsServer = WebSocketServer { req, ws in
-//            ws.onBinary { data in
-//                let request = try map(from: data, to: Request.self, using: JSONParser.self)
-//                try Client.request(
-//                    method: request.method,
-//                    headers: ["user-agent": request.userAgent],
-//                    contentType: request.contentType,
-//                    content: ["data": request.data]
-//                )
-//            }
-//        }
-//        
-//        try Server(responder: wsServer).start()
-
+        print(json)
     
     }
     

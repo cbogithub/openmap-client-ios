@@ -6,5 +6,5 @@ target 'OpenPokeMap' do
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     source 'https://github.com/CocoaPods/Specs.git'
     use_frameworks!
-    pod 'Starscream', '~> 1.1.3'
+    pod 'SwiftWebSocket'
 end

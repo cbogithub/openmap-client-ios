@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Starscream.xcscheme</key>
+		<key>SwiftWebSocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9B5FA1E9FD6E592D97A4AFD290937BCC</key>
+		<key>729E7050FC301774E64998FAB5D59030</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C03984507C16DACBC547CF926D1534F1</key>
+		<key>CAC19610C32808B5CF86592281251923</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB7C0D67F05A052CC401B641F1CA4E93</key>
+		<key>E8F3E8C15E4977E51AD0B57CD283E879</key>
 		<dict>
 			<key>primary</key>
 			<true/>
