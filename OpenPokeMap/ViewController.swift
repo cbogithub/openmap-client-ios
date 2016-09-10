@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Starscream
 //import Quark
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WebSocketDelegate {
     
 
-    let socket = WebSocket("ws://localhost:8080/websocket")
+    let socket = WebSocket(url: NSURL(string: "ws://localhost:8080/websocket")!)
     
     @IBOutlet weak var webView: UIWebView!
    
@@ -26,34 +27,30 @@ class ViewController: UIViewController {
         webView.loadRequest(request)
         
     //MARK: Connect to WebSocket
-        connectToSocket()
+        socket.delegate = self
+        socket.connect()
     }
     
     // MARK: Websocket Delegate Methods.
     
-    func connectToSocket(){
-        socket.event.open = {
-            print("Connected to socket")
-        }
-        socket.event.close = { code, reason, clean in
-            print("Websocket closed")
-            self.connectToSocket()
-        }
-        
-        socket.event.error = { error in
-            print("error \(error)")
-            self.connectToSocket()
-        }
-        
-        socket.event.message = { message in
-            if let text = message as? String {
-                print("recv: \(text)")
-                let challenge = text
-                self.respondToChallenge(challenge)
-            }
-        }
+    func websocketDidConnect(socket: WebSocket) {
+        print("Connected to WebSocket.")
+    }
+    
+    func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
+        print("websocket is disconnected: \(error?.localizedDescription)")
+        socket.connect()
+    }
+    
+    func websocketDidReceiveMessage(socket: WebSocket, text: String) {
+        print("Recived a string. Parsing. \(text)")
+        respondToChallenge(text)
     }
 
+    func websocketDidReceiveData(socket: WebSocket, data: NSData) {
+        print("got some data: \(data.length)")
+    }
+    
     func respondToChallenge(challenge: String) {
         print("Challenge passed successfully \(challenge)")
         let json = JSON(challenge)
@@ -88,8 +85,8 @@ class ViewController: UIViewController {
 //        
 //        try Server(responder: wsServer).start()
 
+    
     }
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -137,11 +134,11 @@ extension UIImage {
         CGContextSetBlendMode(context, .Normal)
         
         let rect = CGRectMake(0, 0, self.size.width, self.size.height) as CGRect
-        CGContextClipToMask(context, rect, self.CGImage)
+        CGContextClipToMask(context, rect, self.CGImage!)
         tintColor.setFill()
         CGContextFillRect(context, rect)
         
-        let newImage = UIGraphicsGetImageFromCurrentImageContext() as UIImage
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()! as UIImage
         UIGraphicsEndImageContext()
         
         return newImage
