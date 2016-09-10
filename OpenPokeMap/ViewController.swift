@@ -7,37 +7,125 @@
 //
 
 import SwiftWebSocket
+import SwiftyJSON
 import UIKit
 
 class ViewController: UIViewController {
     
-
-    let socket = WebSocket("ws://localhost:8080/websocket")
-    
     @IBOutlet weak var webView: UIWebView!
-   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    
+    let debug = true
+    var timer = NSTimer()
+    let internetCheckInterval = Double(5)
+    
+    func checkSocket() {
+        if debug {
+            let socketURL = WebSocket("ws://localhost:8080/websocket")
+            let socketString = String(socketURL)
+            print("Socket URL is \(socketString)")
+            connectToWS(socketURL)
+        } else {
+            let socketURL = WebSocket("ws://ws.openpokemap.pw")
+            let socketString = String(socketURL)
+            print("Socket URL is \(socketString)")
+            connectToWS(socketURL)
+        }
+    }
+    
+    func checkInternet() {
+        var succsessfulTimes = 0
+        if Reachability.isConnectedToNetwork() == true {
+            if succsessfulTimes == 0 {
+                print("First time of sucess, reloading!")
+                reloadWebview()
+            } else {
+                print("Succsessful connections: \(succsessfulTimes)")
+                print("Internet connection OK")
+            }
+            succsessfulTimes + 1
+        } else {
+            timer.invalidate()
+            print("Internet connection FAILED")
+            displayFailAlert(true)
+            succsessfulTimes = 0
+            reloadWebview()
+            timer = NSTimer.scheduledTimerWithTimeInterval(internetCheckInterval, target: self, selector: Selector("checkInternet"), userInfo: nil, repeats: true)
+        }
+    }
+    
+    func reloadWebview() {
         let url = NSURL(string: "https://openpokemap.pw/mobile.html")
         let request = NSURLRequest(URL: url!)
         webView.scrollView.maximumZoomScale = 1.0;
         webView.scrollView.minimumZoomScale = 1.0;
         webView.loadRequest(request)
     }
+   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        reloadWebview()
+        timer = NSTimer.scheduledTimerWithTimeInterval(internetCheckInterval, target: self, selector: Selector("checkInternet"), userInfo: nil, repeats: true)
+        checkSocket()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        checkInternet()
+    }
+    
     
     // MARK: Websocket Delegate Methods.
     
-    func ConnectToSocket () {
-        var messageNum = 0
-        let ws = socket
+    func displayFailAlert(network: Bool) {
+        if network {
+            print("Displaying no internet alert")
+            let alertController = UIAlertController(title: "No Internet.", message: "Dangit. You need the internet to use this app.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
+                self.checkInternet()
+                })
+            
+            alertController.show()
+        } else {
+            let alertController = UIAlertController(title: "Anyone Home?", message: "Dang. We can't call home.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "Server Status", style: UIAlertActionStyle.Destructive) { (result : UIAlertAction) -> Void in
+                if let url = NSURL(string: "http://status.openpokemap.pw/") where UIApplication.sharedApplication().canOpenURL(url) {
+                    UIApplication.sharedApplication().openURL(url)
+                }
+                self.checkSocket()
+                })
+            alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
+                self.checkSocket()
+                })
+            
+            alertController.show()
+        }
+    }
+    
+    func connectToWS(socketURL: WebSocket) {
+        var i = 1
+        let ws = socketURL
         ws.event.open = {
-            print("Conected.")
+            print("Connected to socket \(ws)")
         }
         ws.event.close = { code, reason, clean in
-            print("Closed.")
-            self.ConnectToSocket()
+
+            if self.debug {
+                print("Couldn't connect to websocket. Start it, scrub.")
+            } else {
+                
+                if i == 25 {
+                    self.displayFailAlert(false)
+                    i = i + 1
+                } else {
+                    print("Could not connect. Retrying the \(i)'st time.")
+                    ws.open()
+                    i = i + 1
+                }
+            }
+            
         }
+        
         ws.event.error = { error in
             print("error \(error)")
         }
@@ -48,6 +136,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
     
     func respondToChallenge(challenge: String) {
         print("Challenge passed successfully \(challenge)")
