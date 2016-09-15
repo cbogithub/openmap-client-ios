@@ -1,0 +1,1359 @@
+ [
+  {
+  "Number": "001",
+  "Name": "Bulbasaur",
+  "BaseAttack": 126,
+  "BaseDefense": 126,
+  "BaseStamina": 90,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "002",
+  "Name": "Ivysaur",
+  "BaseAttack": 156,
+  "BaseDefense": 158,
+  "BaseStamina": 120,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "003",
+  "Name": "Venusaur",
+  "BaseAttack": 198,
+  "BaseDefense": 200,
+  "BaseStamina": 160,
+  "CaptureRate": 0.04,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "004",
+  "Name": "Charmander",
+  "BaseAttack": 128,
+  "BaseDefense": 108,
+  "BaseStamina": 78,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "005",
+  "Name": "Charmeleon",
+  "BaseAttack": 160,
+  "BaseDefense": 140,
+  "BaseStamina": 116,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "006",
+  "Name": "Charizard",
+  "BaseAttack": 212,
+  "BaseDefense": 182,
+  "BaseStamina": 156,
+  "CaptureRate": 0.04,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "007",
+  "Name": "Squirtle",
+  "BaseAttack": 112,
+  "BaseDefense": 142,
+  "BaseStamina": 88,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "008",
+  "Name": "Wartortle",
+  "BaseAttack": 144,
+  "BaseDefense": 176,
+  "BaseStamina": 118,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "009",
+  "Name": "Blastoise",
+  "BaseAttack": 186,
+  "BaseDefense": 222,
+  "BaseStamina": 158,
+  "CaptureRate": 0.04,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "010",
+  "Name": "Caterpie",
+  "BaseAttack": 62,
+  "BaseDefense": 66,
+  "BaseStamina": 90,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.2
+  },
+  {
+  "Number": "011",
+  "Name": "Metapod",
+  "BaseAttack": 56,
+  "BaseDefense": 86,
+  "BaseStamina": 100,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "012",
+  "Name": "Butterfree",
+  "BaseAttack": 144,
+  "BaseDefense": 144,
+  "BaseStamina": 120,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "013",
+  "Name": "Weedle",
+  "BaseAttack": 68,
+  "BaseDefense": 64,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.2
+  },
+  {
+  "Number": "014",
+  "Name": "Kakuna",
+  "BaseAttack": 62,
+  "BaseDefense": 82,
+  "BaseStamina": 90,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "015",
+  "Name": "Beedrill",
+  "BaseAttack": 144,
+  "BaseDefense": 130,
+  "BaseStamina": 130,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "016",
+  "Name": "Pidgey",
+  "BaseAttack": 94,
+  "BaseDefense": 90,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.2
+  },
+  {
+  "Number": "017",
+  "Name": "Pidgeotto",
+  "BaseAttack": 126,
+  "BaseDefense": 122,
+  "BaseStamina": 126,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "018",
+  "Name": "Pidgeot",
+  "BaseAttack": 170,
+  "BaseDefense": 166,
+  "BaseStamina": 166,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "019",
+  "Name": "Rattata",
+  "Classification": "Mouse Pokemon",
+  "BaseAttack": 92,
+  "BaseDefense": 86,
+  "BaseStamina": 60,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.2
+  },
+  {
+  "Number": "020",
+  "Name": "Raticate",
+  "BaseDefense": 150,
+  "BaseStamina": 110,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "021",
+  "Name": "Spearow",
+  "BaseAttack": 102,
+  "BaseDefense": 78,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "022",
+  "Name": "Fearow",
+  "BaseAttack": 168,
+  "BaseDefense": 146,
+  "BaseStamina": 130,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "023",
+  "Name": "Ekans",
+  "BaseAttack": 112,
+  "BaseDefense": 112,
+  "BaseStamina": 70,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "024",
+  "Name": "Arbok",
+  "BaseAttack": 166,
+  "BaseDefense": 166,
+  "BaseStamina": 120,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "025",
+  "Name": "Pikachu",
+  "BaseAttack": 124,
+  "BaseDefense": 108,
+  "BaseStamina": 70,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "026",
+  "Name": "Raichu",
+  "BaseAttack": 200,
+  "BaseDefense": 154,
+  "BaseStamina": 120,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "027",
+  "Name": "Sandshrew",
+  "BaseDefense": 114,
+  "BaseStamina": 100,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "028",
+  "Name": "Sandslash",
+  "BaseAttack": 150,
+  "BaseDefense": 172,
+  "BaseStamina": 150,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "029",
+  "Name": "Nidoran F",
+  "BaseAttack": 100,
+  "BaseDefense": 104,
+  "BaseStamina": 110,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "030",
+  "Name": "Nidorina",
+  "BaseAttack": 132,
+  "BaseDefense": 136,
+  "BaseStamina": 140,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "031",
+  "Name": "Nidoqueen",
+  "BaseAttack": 184,
+  "BaseDefense": 190,
+  "BaseStamina": 180,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "032",
+  "Name": "Nidoran M",
+  "BaseAttack": 110,
+  "BaseDefense": 94,
+  "BaseStamina": 92,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "033",
+  "Name": "Nidorino",
+  "BaseAttack": 142,
+  "BaseDefense": 128,
+  "BaseStamina": 122,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "034",
+  "Name": "Nidoking",
+  "BaseAttack": 204,
+  "BaseDefense": 170,
+  "BaseStamina": 162,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "035",
+  "Name": "Clefairy",
+  "BaseAttack": 116,
+  "BaseDefense": 124,
+  "BaseStamina": 140,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "036",
+  "Name": "Clefable",
+  "BaseAttack": 178,
+  "BaseDefense": 178,
+  "BaseStamina": 190,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "037",
+  "Name": "Vulpix",
+  "BaseAttack": 106,
+  "BaseDefense": 118,
+  "BaseStamina": 76,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "038",
+  "Name": "Ninetales",
+  "BaseAttack": 176,
+  "BaseDefense": 194,
+  "BaseStamina": 146,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "039",
+  "Name": "Jigglypuff",
+  "BaseAttack": 98,
+  "BaseDefense": 54,
+  "BaseStamina": 230,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "040",
+  "Name": "Wigglytuff",
+  "BaseAttack": 168,
+  "BaseDefense": 108,
+  "BaseStamina": 280,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "041",
+  "Name": "Zubat",
+  "BaseAttack": 88,
+  "BaseDefense": 90,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.2
+  },
+  {
+  "Number": "042",
+  "Name": "Golbat",
+  "BaseAttack": 164,
+  "BaseDefense": 164,
+  "BaseStamina": 150,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "043",
+  "Name": "Oddish",
+  "BaseAttack": 134,
+  "BaseDefense": 130,
+  "BaseStamina": 90,
+  "CaptureRate": 0.48,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "044",
+  "Name": "Gloom",
+  "BaseAttack": 162,
+  "BaseDefense": 158,
+  "BaseStamina": 120,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "045",
+  "Name": "Vileplume",
+  "BaseAttack": 202,
+  "BaseDefense": 190,
+  "BaseStamina": 150,
+  "CaptureRate": 0.12,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "046",
+  "Name": "Paras",
+  "BaseAttack": 122,
+  "BaseDefense": 120,
+  "BaseStamina": 70,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "047",
+  "Name": "Parasect",
+  "BaseAttack": 162,
+  "BaseDefense": 170,
+  "BaseStamina": 120,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "048",
+  "Name": "Venonat",
+  "BaseAttack": 108,
+  "BaseDefense": 118,
+  "BaseStamina": 120,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "049",
+  "Name": "Venomoth",
+  "BaseAttack": 172,
+  "BaseDefense": 154,
+  "BaseStamina": 140,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "050",
+  "Name": "Diglett",
+  "BaseAttack": 108,
+  "BaseDefense": 86,
+  "BaseStamina": 20,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "051",
+  "Name": "Dugtrio",
+  "BaseAttack": 148,
+  "BaseDefense": 140,
+  "BaseStamina": 70,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "052",
+  "Name": "Meowth",
+  "BaseAttack": 104,
+  "BaseDefense": 94,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "053",
+  "Name": "Persian",
+  "BaseAttack": 156,
+  "BaseDefense": 146,
+  "BaseStamina": 130,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "054",
+  "Name": "Psyduck",
+  "BaseAttack": 132,
+  "BaseDefense": 112,
+  "BaseStamina": 100,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "055",
+  "Name": "Golduck",
+  "BaseAttack": 194,
+  "BaseDefense": 176,
+  "BaseStamina": 160,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "056",
+  "Name": "Mankey",
+  "BaseAttack": 122,
+  "BaseDefense": 96,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "057",
+  "Name": "Primeape",
+  "BaseAttack": 178,
+  "BaseDefense": 150,
+  "BaseStamina": 130,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "058",
+  "Name": "Growlithe",
+  "BaseAttack": 156,
+  "BaseDefense": 110,
+  "BaseStamina": 110,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "059",
+  "Name": "Arcanine",
+  "BaseAttack": 230,
+  "BaseDefense": 180,
+  "BaseStamina": 180,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "060",
+  "Name": "Poliwag",
+  "BaseAttack": 108,
+  "BaseDefense": 98,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "061",
+  "Name": "Poliwhirl",
+  "BaseAttack": 132,
+  "BaseDefense": 132,
+  "BaseStamina": 130,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "062",
+  "Name": "Poliwrath",
+  "BaseAttack": 180,
+  "BaseDefense": 202,
+  "BaseStamina": 180,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "063",
+  "Name": "Abra",
+  "BaseAttack": 110,
+  "BaseDefense": 76,
+  "BaseStamina": 50,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.99
+  },
+  {
+  "Number": "064",
+  "Name": "Kadabra",
+  "BaseAttack": 150,
+  "BaseDefense": 112,
+  "BaseStamina": 80,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "065",
+  "Name": "Alakazam",
+  "BaseAttack": 186,
+  "BaseDefense": 152,
+  "BaseStamina": 110,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "066",
+  "Name": "Machop",
+  "BaseAttack": 118,
+  "BaseDefense": 96,
+  "BaseStamina": 140,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "067",
+  "Name": "Machoke",
+  "BaseAttack": 154,
+  "BaseDefense": 144,
+  "BaseStamina": 160,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "068",
+  "Name": "Machamp",
+  "BaseAttack": 198,
+  "BaseDefense": 180,
+  "BaseStamina": 180,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "069",
+  "Name": "Bellsprout",
+  "BaseAttack": 158,
+  "BaseDefense": 78,
+  "BaseStamina": 100,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "070",
+  "Name": "Weepinbell",
+  "BaseAttack": 190,
+  "BaseDefense": 110,
+  "BaseStamina": 130,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "071",
+  "Name": "Victreebel",
+  "BaseAttack": 222,
+  "BaseDefense": 152,
+  "BaseStamina": 160,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "072",
+  "Name": "Tentacool",
+  "BaseAttack": 106,
+  "BaseDefense": 136,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "073",
+  "Name": "Tentacruel",
+  "BaseAttack": 170,
+  "BaseDefense": 196,
+  "BaseStamina": 160,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "074",
+  "Name": "Geodude",
+  "BaseAttack": 106,
+  "BaseDefense": 118,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "075",
+  "Name": "Graveler",
+  "BaseAttack": 142,
+  "BaseDefense": 156,
+  "BaseStamina": 110,
+  "CaptureRate": 0.2,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "076",
+  "Name": "Golem",
+  "BaseAttack": 176,
+  "BaseDefense": 198,
+  "BaseStamina": 160,
+  "CaptureRate": 0.1,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "077",
+  "Name": "Ponyta",
+  "BaseAttack": 168,
+  "BaseDefense": 138,
+  "BaseStamina": 100,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "078",
+  "Name": "Rapidash",
+  "BaseAttack": 200,
+  "BaseDefense": 170,
+  "BaseStamina": 130,
+  "CaptureRate": 0.12,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "079",
+  "Name": "Slowpoke",
+  "BaseAttack": 110,
+  "BaseDefense": 110,
+  "BaseStamina": 180,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "080",
+  "Name": "Slowbro",
+  "BaseAttack": 184,
+  "BaseDefense": 198,
+  "BaseStamina": 190,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "081",
+  "Name": "Magnemite",
+  "BaseAttack": 128,
+  "BaseDefense": 138,
+  "BaseStamina": 50,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "082",
+  "Name": "Magneton",
+  "BaseAttack": 186,
+  "BaseDefense": 180,
+  "BaseStamina": 100,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "083",
+  "Name": "Farfetch'd",
+  "BaseAttack": 138,
+  "BaseDefense": 132,
+  "BaseStamina": 104,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "084",
+  "Name": "Doduo",
+  "BaseAttack": 126,
+  "BaseDefense": 96,
+  "BaseStamina": 70,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "085",
+  "Name": "Dodrio",
+  "BaseAttack": 182,
+  "BaseDefense": 150,
+  "BaseStamina": 120,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "086",
+  "Name": "Seel",
+  "BaseAttack": 104,
+  "BaseDefense": 138,
+  "BaseStamina": 130,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "087",
+  "Name": "Dewgong",
+  "BaseAttack": 156,
+  "BaseDefense": 192,
+  "BaseStamina": 180,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "088",
+  "Name": "Grimer",
+  "BaseAttack": 124,
+  "BaseDefense": 110,
+  "BaseStamina": 160,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "089",
+  "Name": "Muk",
+  "BaseAttack": 180,
+  "BaseDefense": 188,
+  "BaseStamina": 210,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "090",
+  "Name": "Shellder",
+  "BaseAttack": 120,
+  "BaseDefense": 112,
+  "BaseStamina": 60,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "091",
+  "Name": "Cloyster",
+  "BaseAttack": 196,
+  "BaseDefense": 196,
+  "BaseStamina": 100,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "092",
+  "Name": "Gastly",
+  "BaseAttack": 136,
+  "BaseDefense": 82,
+  "BaseStamina": 60,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "093",
+  "Name": "Haunter",
+  "BaseAttack": 172,
+  "BaseDefense": 118,
+  "BaseStamina": 90,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "094",
+  "Name": "Gengar",
+  "BaseAttack": 204,
+  "BaseDefense": 156,
+  "BaseStamina": 120,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "095",
+  "Name": "Onix",
+  "BaseDefense": 186,
+  "BaseStamina": 70,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "096",
+  "Name": "Drowzee",
+  "BaseAttack": 104,
+  "BaseDefense": 140,
+  "BaseStamina": 120,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "097",
+  "Name": "Hypno",
+  "BaseAttack": 162,
+  "BaseDefense": 196,
+  "BaseStamina": 170,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "098",
+  "Name": "Krabby",
+  "BaseAttack": 116,
+  "BaseDefense": 110,
+  "BaseStamina": 60,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "099",
+  "Name": "Kingler",
+  "BaseAttack": 178,
+  "BaseDefense": 168,
+  "BaseStamina": 110,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "100",
+  "Name": "Voltorb",
+  "BaseAttack": 102,
+  "BaseDefense": 124,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "101",
+  "Name": "Electrode",
+  "BaseAttack": 150,
+  "BaseDefense": 174,
+  "BaseStamina": 120,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "102",
+  "Name": "Exeggcute",
+  "BaseAttack": 110,
+  "BaseDefense": 132,
+  "BaseStamina": 120,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "103",
+  "Name": "Exeggutor",
+  "BaseAttack": 232,
+  "BaseDefense": 164,
+  "BaseStamina": 190,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "104",
+  "Name": "Cubone",
+  "BaseAttack": 102,
+  "BaseDefense": 150,
+  "BaseStamina": 100,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "105",
+  "Name": "Marowak",
+  "BaseAttack": 140,
+  "BaseDefense": 202,
+  "BaseStamina": 120,
+  "CaptureRate": 0.12,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "106",
+  "Name": "Hitmonlee",
+  "BaseAttack": 148,
+  "BaseDefense": 172,
+  "BaseStamina": 100,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "107",
+  "Name": "Hitmonchan",
+  "BaseAttack": 138,
+  "BaseDefense": 204,
+  "BaseStamina": 100,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "108",
+  "Name": "Lickitung",
+  "BaseAttack": 126,
+  "BaseDefense": 160,
+  "BaseStamina": 180,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "109",
+  "Name": "Koffing",
+  "BaseAttack": 136,
+  "BaseDefense": 142,
+  "BaseStamina": 80,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "110",
+  "Name": "Weezing",
+  "BaseDefense": 198,
+  "BaseStamina": 130,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "111",
+  "Name": "Rhyhorn",
+  "BaseAttack": 110,
+  "BaseDefense": 116,
+  "BaseStamina": 160,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "112",
+  "Name": "Rhydon",
+  "BaseDefense": 160,
+  "BaseStamina": 210,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "113",
+  "Name": "Chansey",
+  "BaseAttack": 40,
+  "BaseDefense": 60,
+  "BaseStamina": 500,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "114",
+  "Name": "Tangela",
+  "BaseAttack": 164,
+  "BaseDefense": 152,
+  "BaseStamina": 130,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "115",
+  "Name": "Kangaskhan",
+  "BaseAttack": 142,
+  "BaseDefense": 178,
+  "BaseStamina": 210,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "116",
+  "Name": "Horsea",
+  "BaseAttack": 122,
+  "BaseDefense": 100,
+  "BaseStamina": 60,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "117",
+  "Name": "Seadra",
+  "BaseAttack": 176,
+  "BaseDefense": 150,
+  "BaseStamina": 110,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "118",
+  "Name": "Goldeen",
+  "BaseAttack": 112,
+  "BaseDefense": 126,
+  "BaseStamina": 90,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "119",
+  "Name": "Seaking",
+  "BaseAttack": 172,
+  "BaseDefense": 160,
+  "BaseStamina": 160,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "120",
+  "Name": "Staryu",
+  "BaseAttack": 130,
+  "BaseDefense": 128,
+  "BaseStamina": 60,
+  "CaptureRate": 0.4,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "121",
+  "Name": "Starmie",
+  "BaseAttack": 194,
+  "BaseDefense": 192,
+  "BaseStamina": 120,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "122",
+  "Name": "Mr. Mime",
+  "BaseAttack": 154,
+  "BaseDefense": 196,
+  "BaseStamina": 80,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "123",
+  "Name": "Scyther",
+  "BaseAttack": 176,
+  "BaseDefense": 180,
+  "BaseStamina": 140,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "124",
+  "Name": "Jynx",
+  "BaseAttack": 172,
+  "BaseDefense": 134,
+  "BaseStamina": 130,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "125",
+  "Name": "Electabuzz",
+  "BaseAttack": 198,
+  "BaseDefense": 160,
+  "BaseStamina": 130,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "126",
+  "Name": "Magmar",
+  "BaseAttack": 214,
+  "BaseDefense": 158,
+  "BaseStamina": 130,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "127",
+  "Name": "Pinsir",
+  "BaseAttack": 184,
+  "BaseDefense": 186,
+  "BaseStamina": 130,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "128",
+  "Name": "Tauros",
+  "BaseAttack": 148,
+  "BaseDefense": 184,
+  "BaseStamina": 150,
+  "CaptureRate": 0.24,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "129",
+  "Name": "Magikarp",
+  "BaseAttack": 42,
+  "BaseDefense": 84,
+  "BaseStamina": 40,
+  "CaptureRate": 0.56,
+  "FleeRate": 0.15
+  },
+  {
+  "Number": "130",
+  "Name": "Gyarados",
+  "BaseAttack": 192,
+  "BaseDefense": 196,
+  "BaseStamina": 190,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.07
+  },
+  {
+  "Number": "131",
+  "Name": "Lapras",
+  "BaseAttack": 186,
+  "BaseDefense": 190,
+  "BaseStamina": 260,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "132",
+  "Name": "Ditto",
+  "Weight": "4.0 kg",
+  "Height": "0.3 m",
+  "BaseAttack": 110,
+  "BaseDefense": 110,
+  "BaseStamina": 96,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "133",
+  "Name": "Eevee",
+  "BaseAttack": 114,
+  "BaseDefense": 128,
+  "BaseStamina": 110,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "134",
+  "Name": "Vaporeon",
+  "BaseAttack": 186,
+  "BaseDefense": 168,
+  "BaseStamina": 260,
+  "CaptureRate": 0.12,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "135",
+  "Name": "Jolteon",
+  "BaseAttack": 192,
+  "BaseDefense": 174,
+  "BaseStamina": 130,
+  "CaptureRate": 0.12,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "136",
+  "Name": "Flareon",
+  "BaseAttack": 238,
+  "BaseDefense": 178,
+  "BaseStamina": 130,
+  "CaptureRate": 0.12,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "137",
+  "Name": "Porygon",
+  "BaseAttack": 156,
+  "BaseDefense": 158,
+  "BaseStamina": 130,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "138",
+  "Name": "Omanyte",
+  "BaseAttack": 132,
+  "BaseDefense": 160,
+  "BaseStamina": 70,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "139",
+  "Name": "Omastar",
+  "BaseAttack": 180,
+  "BaseDefense": 202,
+  "BaseStamina": 140,
+  "CaptureRate": 0.12,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "140",
+  "Name": "Kabuto",
+  "BaseAttack": 148,
+  "BaseDefense": 142,
+  "BaseStamina": 60,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "141",
+  "Name": "Kabutops",
+  "BaseAttack": 190,
+  "BaseDefense": 190,
+  "BaseStamina": 120,
+  "CaptureRate": 0.12,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "142",
+  "Name": "Aerodactyl",
+  "BaseAttack": 182,
+  "BaseDefense": 162,
+  "BaseStamina": 160,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "143",
+  "Name": "Snorlax",
+  "BaseAttack": 180,
+  "BaseDefense": 180,
+  "BaseStamina": 320,
+  "CaptureRate": 0.16,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "144",
+  "Name": "Articuno",
+  "BaseAttack": 198,
+  "BaseDefense": 242,
+  "BaseStamina": 180,
+  "CaptureRate": 0,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "145",
+  "Name": "Zapdos",
+  "BaseAttack": 232,
+  "BaseDefense": 194,
+  "BaseStamina": 180,
+  "CaptureRate": 0,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "146",
+  "Name": "Moltres",
+  "BaseAttack": 242,
+  "BaseDefense": 194,
+  "BaseStamina": 180,
+  "CaptureRate": 0,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "147",
+  "Name": "Dratini",
+  "BaseAttack": 128,
+  "BaseDefense": 110,
+  "BaseStamina": 82,
+  "CaptureRate": 0.32,
+  "FleeRate": 0.09
+  },
+  {
+  "Number": "148",
+  "Name": "Dragonair",
+  "BaseAttack": 170,
+  "BaseDefense": 152,
+  "BaseStamina": 122,
+  "CaptureRate": 0.08,
+  "FleeRate": 0.06
+  },
+  {
+  "Number": "149",
+  "Name": "Dragonite",
+  "BaseAttack": 250,
+  "BaseDefense": 212,
+  "BaseStamina": 182,
+  "CaptureRate": 0.04,
+  "FleeRate": 0.05
+  },
+  {
+  "Number": "150",
+  "Name": "Mewtwo",
+  "BaseAttack": 284,
+  "BaseDefense": 202,
+  "BaseStamina": 212,
+  "CaptureRate": 0,
+  "FleeRate": 0.1
+  },
+  {
+  "Number": "151",
+  "Name": "Mew",
+  "BaseAttack": 220,
+  "BaseDefense": 220,
+  "BaseStamina": 200,
+  "CaptureRate": 0,
+  "FleeRate": 0.1
+  }
+  ]
