@@ -17,10 +17,11 @@ class ViewController: UIViewController {
     let debug = true
     var timer = NSTimer()
     let internetCheckInterval = Double(5)
-    
+    var successfulTimes = 0
+
     func checkSocket() {
         if debug {
-            let socketURL = WebSocket("ws://localhost:8080/websocket")
+            let socketURL = WebSocket("ws://192.168.0.10:8080/websocket")
             let socketString = String(socketURL)
             print("Socket URL is \(socketString)")
             connectToWS(socketURL)
@@ -33,24 +34,18 @@ class ViewController: UIViewController {
     }
     
     func checkInternet() {
-        var succsessfulTimes = 0
-        if Reachability.isConnectedToNetwork() == true {
-            if succsessfulTimes == 0 {
-                print("First time of sucess, reloading!")
-                reloadWebview()
-            } else {
-                print("Succsessful connections: \(succsessfulTimes)")
-                print("Internet connection OK")
-            }
-            succsessfulTimes + 1
-        } else {
-            timer.invalidate()
-            print("Internet connection FAILED")
+        let status = Reach().connectionStatus()
+        
+        switch status {
+        case .Unknown, .Offline:
+            print("Not connected")
             displayFailAlert(true)
-            succsessfulTimes = 0
-            reloadWebview()
-            timer = NSTimer.scheduledTimerWithTimeInterval(internetCheckInterval, target: self, selector: Selector("checkInternet"), userInfo: nil, repeats: true)
+        case .Online(.WWAN):
+            print("Connected via WWAN")
+        case .Online(.WiFi):
+            print("Connected via WiFi")
         }
+        
     }
     
     func reloadWebview() {
@@ -61,17 +56,23 @@ class ViewController: UIViewController {
         webView.loadRequest(request)
     }
    
+    func networkStatusChanged(notification: NSNotification) {
+        let userInfo = notification.userInfo
+        print(userInfo)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: "checkInternet", userInfo: nil, repeats: true)
         
         reloadWebview()
-        timer = NSTimer.scheduledTimerWithTimeInterval(internetCheckInterval, target: self, selector: Selector("checkInternet"), userInfo: nil, repeats: true)
         checkSocket()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        checkInternet()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("networkStatusChanged:"), name: ReachabilityStatusChangedNotification, object: nil)
+        Reach().monitorReachabilityChanges()
     }
     
     
@@ -82,6 +83,7 @@ class ViewController: UIViewController {
             print("Displaying no internet alert")
             let alertController = UIAlertController(title: "No Internet.", message: "Dangit. You need the internet to use this app.", preferredStyle: .Alert)
             alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
+                self.reloadWebview()
                 self.checkInternet()
                 })
             
@@ -114,7 +116,7 @@ class ViewController: UIViewController {
                 print("Couldn't connect to websocket. Start it, scrub.")
             } else {
                 
-                if i == 25 {
+                if i == 5 {
                     self.displayFailAlert(false)
                     i = i + 1
                 } else {
@@ -142,7 +144,9 @@ class ViewController: UIViewController {
         print("Challenge passed successfully \(challenge)")
         let json = JSON(challenge)
         print(json)
-    
+        let host = json["host"].string
+        print("Host: \(host)")
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -180,7 +184,7 @@ extension UIAlertController {
         }
     }
 }
-// Add anywhere in your app
+
 extension UIImage {
     func imageWithColor(tintColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)

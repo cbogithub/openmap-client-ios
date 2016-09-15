@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Rollout.io
+
+See http://www.rollout.io/
+
 ## SwiftWebSocket
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

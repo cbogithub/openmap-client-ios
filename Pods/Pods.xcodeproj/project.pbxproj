@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		11A195E10621C6B433777843DFB84FD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		1F5EDFBE765E1667F685F65ADC1C19D2 /* SwiftWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BADB2BD2F4BF976D5902C1614533C83D /* SwiftWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F5EDFBE765E1667F685F65ADC1C19D2 /* SwiftWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B15E7FAE8485E0D11695C2FE71D91FCD /* SwiftWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30B339922A01E9C1142D10632585353D /* Pods-OpenPokeMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A756BDC2C0989ACE15F40DD70617B7F /* Pods-OpenPokeMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E1CB1363782FBFC8CC6E91C86440A72 /* Pods-OpenPokeMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6086B5DD1C0E51FE4715A40E77148 /* Pods-OpenPokeMap-dummy.m */; };
-		573CE3BF2E2C2DDCADD78C0DBD8098C2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC945970A89FA2911DEE501E0FC27BE6 /* SwiftyJSON.swift */; };
-		57DA2CD1257479180BBF3E724328AC72 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4ED7D4B54D84EF4902CB6A87101DC3 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6500232ED38B28D7C2DF95E55EE5A6B6 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F73FFF4DE5281AED9BE957B5F72E503 /* WebSocket.swift */; };
+		573CE3BF2E2C2DDCADD78C0DBD8098C2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C939D30B379422EB7780F8FFB18163E /* SwiftyJSON.swift */; };
+		57DA2CD1257479180BBF3E724328AC72 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9345FC2779E33477907026573A50D07 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6500232ED38B28D7C2DF95E55EE5A6B6 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800E39F0040AAD2C8C988C8E1038519 /* WebSocket.swift */; };
 		BE95E6618389AC31F1EB97B52D835998 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		C5605132751198BBD9D8E5B8EA00B639 /* SwiftWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4457F4545011C6A36A76B07C57338ABC /* SwiftWebSocket-dummy.m */; };
-		D03973B89121FF566EA23727BED7885A /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88999E77EDD37FE17FFA23D133C41E /* SwiftyJSON-dummy.m */; };
+		C5605132751198BBD9D8E5B8EA00B639 /* SwiftWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4C7C65B016067B1E6F4D61EB5FFAE1 /* SwiftWebSocket-dummy.m */; };
+		D03973B89121FF566EA23727BED7885A /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A692C4117AEE7CD35F315094F43F17 /* SwiftyJSON-dummy.m */; };
 		D3BA3027D02E503FC7EE5252A383A299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,35 +38,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		312294DADA3EB94F9C68344672B8333D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1119C048442ACD1DF0E9F8F6F47E54D4 /* SwiftWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-prefix.pch"; sourceTree = "<group>"; };
+		1C939D30B379422EB7780F8FFB18163E /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		3506239DA7ED12022124672864661896 /* Pods-OpenPokeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenPokeMap.release.xcconfig"; sourceTree = "<group>"; };
-		3F73FFF4DE5281AED9BE957B5F72E503 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
-		3F88999E77EDD37FE17FFA23D133C41E /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		4457F4545011C6A36A76B07C57338ABC /* SwiftWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftWebSocket-dummy.m"; sourceTree = "<group>"; };
-		60392B3E892351F796C80C7ADAB2F2F8 /* SwiftWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-prefix.pch"; sourceTree = "<group>"; };
-		6366C4931460223BBE00A52F5668B692 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		3800E39F0040AAD2C8C988C8E1038519 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
+		4746288DC83581E3CFBD5FDEB48B1A56 /* Rollout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rollout.framework; path = Rollout/Rollout.framework; sourceTree = "<group>"; };
 		6A756BDC2C0989ACE15F40DD70617B7F /* Pods-OpenPokeMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenPokeMap-umbrella.h"; sourceTree = "<group>"; };
-		6B17F76D4AF60398AE85A98658FFFB71 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		7336C81D428D0A92EF381D6C2458BA4A /* Pods-OpenPokeMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpenPokeMap.modulemap"; sourceTree = "<group>"; };
 		7880591818936BC9CFF0A7F609814F96 /* Pods-OpenPokeMap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenPokeMap-frameworks.sh"; sourceTree = "<group>"; };
-		8A4ED7D4B54D84EF4902CB6A87101DC3 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		8F15F72AF6A04E296E345A7D9E07197B /* SwiftWebSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftWebSocket.modulemap; sourceTree = "<group>"; };
+		90535F5B0846AB013C0C1F0D8A835254 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D0D360D029EADB5F8FBECEE8F2B4F32 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		9F1BE7CD6C01D5C27C3FB66017390987 /* SwiftWebSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftWebSocket.xcconfig; sourceTree = "<group>"; };
 		A3659E7D23CE8F4B7AF0275851D2906C /* Pods-OpenPokeMap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenPokeMap-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A40084091F80F45C250231A5C09632BE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A41484CE018157BB88D674C4503CF38A /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		AC5C11E3A1F27E630A48F554D5C0F4F8 /* SwiftWebSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftWebSocket.xcconfig; sourceTree = "<group>"; };
+		A5D730403F04B6B021A44B86088F71DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD637396225D0FB110E1E4A7CF60E7C3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		B15E7FAE8485E0D11695C2FE71D91FCD /* SwiftWebSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-umbrella.h"; sourceTree = "<group>"; };
 		B8E1D5CF4CF1DD42CA84A44C9D4CBD09 /* SwiftWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BADB2BD2F4BF976D5902C1614533C83D /* SwiftWebSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-umbrella.h"; sourceTree = "<group>"; };
-		BBC0FBA9B368E42AF61D5DC49D3F11CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBC6086B5DD1C0E51FE4715A40E77148 /* Pods-OpenPokeMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenPokeMap-dummy.m"; sourceTree = "<group>"; };
-		BC945970A89FA2911DEE501E0FC27BE6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		BBF0B46A4B1C7ACC0FCB69A256CF492F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9345FC2779E33477907026573A50D07 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		D9E81D906A9A52018E708896CD2ABE90 /* Pods-OpenPokeMap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenPokeMap-acknowledgements.plist"; sourceTree = "<group>"; };
 		DC2E117C86CAB0D2343CA56F899029C3 /* Pods-OpenPokeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenPokeMap.debug.xcconfig"; sourceTree = "<group>"; };
 		DC5A905C62CA54A98B797147A73FDD19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41529ECB52FA2433DFE369F7E6448A2 /* SwiftWebSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftWebSocket.modulemap; sourceTree = "<group>"; };
 		F5482B6B584FB8435693D6F15F376E80 /* Pods-OpenPokeMap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenPokeMap-resources.sh"; sourceTree = "<group>"; };
 		F6B332BF87AD91C0E1AF30D8616928E9 /* Pods_OpenPokeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenPokeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A692C4117AEE7CD35F315094F43F17 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		FD4C7C65B016067B1E6F4D61EB5FFAE1 /* SwiftWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftWebSocket-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,52 +98,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		001B85B4DE50918F360B56E03367D72C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				312294DADA3EB94F9C68344672B8333D /* Info.plist */,
-				8F15F72AF6A04E296E345A7D9E07197B /* SwiftWebSocket.modulemap */,
-				AC5C11E3A1F27E630A48F554D5C0F4F8 /* SwiftWebSocket.xcconfig */,
-				4457F4545011C6A36A76B07C57338ABC /* SwiftWebSocket-dummy.m */,
-				60392B3E892351F796C80C7ADAB2F2F8 /* SwiftWebSocket-prefix.pch */,
-				BADB2BD2F4BF976D5902C1614533C83D /* SwiftWebSocket-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftWebSocket";
-			sourceTree = "<group>";
-		};
-		09390EB3BE6AD43451462076C8ECCBFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4ECBB6EC39DAE96A0366B806BB56154C /* SwiftWebSocket */,
-				256FD4D1CC082D1EBD3978271E7C4F0C /* SwiftyJSON */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		256FD4D1CC082D1EBD3978271E7C4F0C /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				BC945970A89FA2911DEE501E0FC27BE6 /* SwiftyJSON.swift */,
-				3303AF266FFDA92DE12D7F2107232C76 /* Support Files */,
-			);
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		3303AF266FFDA92DE12D7F2107232C76 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BBC0FBA9B368E42AF61D5DC49D3F11CC /* Info.plist */,
-				6B17F76D4AF60398AE85A98658FFFB71 /* SwiftyJSON.modulemap */,
-				A41484CE018157BB88D674C4503CF38A /* SwiftyJSON.xcconfig */,
-				3F88999E77EDD37FE17FFA23D133C41E /* SwiftyJSON-dummy.m */,
-				6366C4931460223BBE00A52F5668B692 /* SwiftyJSON-prefix.pch */,
-				8A4ED7D4B54D84EF4902CB6A87101DC3 /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,24 +106,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4ECBB6EC39DAE96A0366B806BB56154C /* SwiftWebSocket */ = {
-			isa = PBXGroup;
-			children = (
-				3F73FFF4DE5281AED9BE957B5F72E503 /* WebSocket.swift */,
-				001B85B4DE50918F360B56E03367D72C /* Support Files */,
-			);
-			path = SwiftWebSocket;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				09390EB3BE6AD43451462076C8ECCBFB /* Pods */,
+				9F47E5F24196316A81CFAC89B36F8FB5 /* Pods */,
 				9CCF1092F280DD93F0111CC943AA4D20 /* Products */,
 				91028480DD9C1FA46EF35E6171F7203F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8472C0BC9DC693184BCD89F91C916C90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4746288DC83581E3CFBD5FDEB48B1A56 /* Rollout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E32B213B836B7F75E4AEDD0C3CCF89C /* SwiftWebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				3800E39F0040AAD2C8C988C8E1038519 /* WebSocket.swift */,
+				C8021BC52ECEA6A078C7551B11948ADC /* Support Files */,
+			);
+			path = SwiftWebSocket;
 			sourceTree = "<group>";
 		};
 		91028480DD9C1FA46EF35E6171F7203F /* Targets Support Files */ = {
@@ -177,6 +140,15 @@
 				9CD0D4726CC0F5B0893FAA05F2714204 /* Pods-OpenPokeMap */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		99799F92385399CC127A2CF9D9064E06 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				1C939D30B379422EB7780F8FFB18163E /* SwiftyJSON.swift */,
+				D20F53D6442535EBF49954C307B33B54 /* Support Files */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		9CCF1092F280DD93F0111CC943AA4D20 /* Products */ = {
@@ -207,12 +179,58 @@
 			path = "Target Support Files/Pods-OpenPokeMap";
 			sourceTree = "<group>";
 		};
+		9F47E5F24196316A81CFAC89B36F8FB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0F763925884D5DD1CD6A3EFF462A6EB /* Rollout.io */,
+				8E32B213B836B7F75E4AEDD0C3CCF89C /* SwiftWebSocket */,
+				99799F92385399CC127A2CF9D9064E06 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0F763925884D5DD1CD6A3EFF462A6EB /* Rollout.io */ = {
+			isa = PBXGroup;
+			children = (
+				8472C0BC9DC693184BCD89F91C916C90 /* Frameworks */,
+			);
+			path = Rollout.io;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8021BC52ECEA6A078C7551B11948ADC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5D730403F04B6B021A44B86088F71DC /* Info.plist */,
+				E41529ECB52FA2433DFE369F7E6448A2 /* SwiftWebSocket.modulemap */,
+				9F1BE7CD6C01D5C27C3FB66017390987 /* SwiftWebSocket.xcconfig */,
+				FD4C7C65B016067B1E6F4D61EB5FFAE1 /* SwiftWebSocket-dummy.m */,
+				1119C048442ACD1DF0E9F8F6F47E54D4 /* SwiftWebSocket-prefix.pch */,
+				B15E7FAE8485E0D11695C2FE71D91FCD /* SwiftWebSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftWebSocket";
+			sourceTree = "<group>";
+		};
+		D20F53D6442535EBF49954C307B33B54 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBF0B46A4B1C7ACC0FCB69A256CF492F /* Info.plist */,
+				AD637396225D0FB110E1E4A7CF60E7C3 /* SwiftyJSON.modulemap */,
+				90535F5B0846AB013C0C1F0D8A835254 /* SwiftyJSON.xcconfig */,
+				F9A692C4117AEE7CD35F315094F43F17 /* SwiftyJSON-dummy.m */,
+				9D0D360D029EADB5F8FBECEE8F2B4F32 /* SwiftyJSON-prefix.pch */,
+				D9345FC2779E33477907026573A50D07 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,7 +391,7 @@
 /* Begin XCBuildConfiguration section */
 		3F8C6ACD33C2D822888E2D9DA5E6588A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A41484CE018157BB88D674C4503CF38A /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 90535F5B0846AB013C0C1F0D8A835254 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -445,7 +463,7 @@
 		};
 		6430ED4AB4ECEA922E68190821EAD881 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A41484CE018157BB88D674C4503CF38A /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 90535F5B0846AB013C0C1F0D8A835254 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -510,7 +528,7 @@
 		};
 		A66EB78CA3779C66D3147FB19114A838 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC5C11E3A1F27E630A48F554D5C0F4F8 /* SwiftWebSocket.xcconfig */;
+			baseConfigurationReference = 9F1BE7CD6C01D5C27C3FB66017390987 /* SwiftWebSocket.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -540,7 +558,7 @@
 		};
 		A9A8CD9B21C5BB9048AEFFF7599114C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC5C11E3A1F27E630A48F554D5C0F4F8 /* SwiftWebSocket.xcconfig */;
+			baseConfigurationReference = 9F1BE7CD6C01D5C27C3FB66017390987 /* SwiftWebSocket.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

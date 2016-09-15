@@ -1,8 +1,10 @@
 PODS:
+  - Rollout.io (1.3.1)
   - SwiftWebSocket (2.6.3)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Rollout.io (~> 1.3.1)
   - SwiftWebSocket
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
@@ -16,9 +18,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  Rollout.io: e2374975b36769db594ecbe8738e13f8a5b202c8
   SwiftWebSocket: 76e3ade5d716a80440dbf859b39b05d842f80d03
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 706901cd29534e48a8799d374dbf2c8a5fc0019a
+PODFILE CHECKSUM: 29e4756d23a3a6bac173a69c90eac66aa3283c83
 
 COCOAPODS: 1.0.1

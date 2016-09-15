@@ -45,7 +45,7 @@ class ivViewController: UITableViewController, UITextFieldDelegate {
                 CalculateIV().doEquation(Pokemon, CP: CP!, HP: HP!, DustPrice: DustPrice!, PoweredUp: PoweredUp)
             }
         } else {
-            let alertController = UIAlertController(title: "Error", message: "This feature has not been implmented in this build.", preferredStyle: .Alert)
+            let alertController = UIAlertController(title: "Error", message: "Error parsing pokemon. Ensure all fields are filled out.", preferredStyle: .Alert)
             alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
             alertController.show()
         }

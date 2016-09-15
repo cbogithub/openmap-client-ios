@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		170007471D7DB3AF00BE789D /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170007461D7DB3AF00BE789D /* HelpController.swift */; };
 		170007491D7DB51400BE789D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170007481D7DB51400BE789D /* TabBarController.swift */; };
-		17393C711D79711F00F03BFA /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17393C701D79711F00F03BFA /* WebSocket.swift */; };
 		173E0C441D7C8D3D0015ACA1 /* ivViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */; };
 		173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */; };
 		173F87DE1D81D66D00E4C4FD /* OpenPokeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */; };
 		173F87E51D81D69900E4C4FD /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173F87D31D81D43F00E4C4FD /* SnapshotHelper.swift */; };
-		176F393E1D8070D800CCF31A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F393D1D8070D800CCF31A /* SwiftyJSON.swift */; };
+		175526701D840BC700BA9BA0 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755266F1D840BC700BA9BA0 /* SettingController.swift */; };
 		177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A71D708F7500842A62 /* AppDelegate.swift */; };
 		177E62AA1D708F7500842A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A91D708F7500842A62 /* ViewController.swift */; };
 		177E62AD1D708F7500842A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62AB1D708F7500842A62 /* Main.storyboard */; };
@@ -23,6 +22,7 @@
 		177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62BA1D70993B00842A62 /* AboutPageController.swift */; };
 		17892F161D71C02B003F3CBB /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */; };
 		179AC8761D7F2B8300525AA1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AC8751D7F2B8300525AA1 /* libz.tbd */; };
+		17B5E4091D89CCEA00D20527 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B5E4081D89CCEA00D20527 /* Reach.swift */; };
 		17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 17FA359D1D7C5A150037C4EC /* base_stats.json */; };
 		17FA35A61D7C5B1B0037C4EC /* base_stat_parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */; };
 		17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */; };
@@ -42,14 +42,13 @@
 /* Begin PBXFileReference section */
 		170007461D7DB3AF00BE789D /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		170007481D7DB51400BE789D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		17393C701D79711F00F03BFA /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ivViewController.swift; path = ../ivViewController.swift; sourceTree = "<group>"; };
 		173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		173F87D31D81D43F00E4C4FD /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../OpenPokeMap/UITests/SnapshotHelper.swift; sourceTree = "<group>"; };
 		173F87DB1D81D66D00E4C4FD /* OpenPokeMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPokeMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPokeMapUITests.swift; sourceTree = "<group>"; };
 		173F87DF1D81D66D00E4C4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		176F393D1D8070D800CCF31A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		1755266F1D840BC700BA9BA0 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		177E62A41D708F7500842A62 /* OpenPokeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPokeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177E62A71D708F7500842A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177E62A91D708F7500842A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		177E62BA1D70993B00842A62 /* AboutPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageController.swift; path = ../AboutPageController.swift; sourceTree = "<group>"; };
 		17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
 		179AC8751D7F2B8300525AA1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		17B5E4081D89CCEA00D20527 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
 		17FA359D1D7C5A150037C4EC /* base_stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = base_stats.json; path = ../base_stats.json; sourceTree = "<group>"; };
 		17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = base_stat_parser.swift; sourceTree = "<group>"; };
 		17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculate_IV.swift; sourceTree = "<group>"; };
@@ -136,8 +136,8 @@
 				177E62A91D708F7500842A62 /* ViewController.swift */,
 				177E62BA1D70993B00842A62 /* AboutPageController.swift */,
 				170007461D7DB3AF00BE789D /* HelpController.swift */,
-				17393C701D79711F00F03BFA /* WebSocket.swift */,
-				176F393D1D8070D800CCF31A /* SwiftyJSON.swift */,
+				1755266F1D840BC700BA9BA0 /* SettingController.swift */,
+				17B5E4081D89CCEA00D20527 /* Reach.swift */,
 				177E62AB1D708F7500842A62 /* Main.storyboard */,
 				177E62B01D708F7500842A62 /* LaunchScreen.storyboard */,
 				177E62AE1D708F7500842A62 /* Assets.xcassets */,
@@ -194,11 +194,13 @@
 			buildConfigurationList = 177E62B61D708F7500842A62 /* Build configuration list for PBXNativeTarget "OpenPokeMap" */;
 			buildPhases = (
 				7E97DCCF2A8F2C7A241FE7FE /* [CP] Check Pods Manifest.lock */,
+				0B196B8B37FEAFCF91A8C4F6 /* Rollout.io pre-build */,
 				177E62A01D708F7500842A62 /* Sources */,
 				177E62A11D708F7500842A62 /* Frameworks */,
 				177E62A21D708F7500842A62 /* Resources */,
 				DE6588DE4269A2C0BF98E399 /* [CP] Embed Pods Frameworks */,
 				032AD62513339CCDC1DA8A23 /* [CP] Copy Pods Resources */,
+				9A0517CEF4C78657468DE3D8 /* Rollout.io post-build */,
 			);
 			buildRules = (
 			);
@@ -286,6 +288,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0B196B8B37FEAFCF91A8C4F6 /* Rollout.io pre-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Rollout.io pre-build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ROLLOUT_lastXcodeprojConfiguration=7 \"${SRCROOT}/Pods/Rollout.io/lib/pre-build_xcode_phase\"";
+		};
 		7E97DCCF2A8F2C7A241FE7FE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,6 +316,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		9A0517CEF4C78657468DE3D8 /* Rollout.io post-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Rollout.io post-build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ROLLOUT_lastXcodeprojConfiguration=7 \"${SRCROOT}/Pods/Rollout.io/lib/post-build_xcode_phase\" -k 57d988f2578779261150f452";
 		};
 		DE6588DE4269A2C0BF98E399 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -332,16 +362,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175526701D840BC700BA9BA0 /* SettingController.swift in Sources */,
 				177E62AA1D708F7500842A62 /* ViewController.swift in Sources */,
 				17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */,
 				173E0C441D7C8D3D0015ACA1 /* ivViewController.swift in Sources */,
-				176F393E1D8070D800CCF31A /* SwiftyJSON.swift in Sources */,
 				170007491D7DB51400BE789D /* TabBarController.swift in Sources */,
-				17393C711D79711F00F03BFA /* WebSocket.swift in Sources */,
 				173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */,
 				177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */,
 				17FA35A61D7C5B1B0037C4EC /* base_stat_parser.swift in Sources */,
 				170007471D7DB3AF00BE789D /* HelpController.swift in Sources */,
+				17B5E4091D89CCEA00D20527 /* Reach.swift in Sources */,
 				177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

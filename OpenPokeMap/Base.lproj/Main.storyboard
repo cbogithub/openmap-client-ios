@@ -271,7 +271,7 @@
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
-                            <tableViewSection footerTitle="This app is in beta. A pogointel project" id="La9-DJ-czg">
+                            <tableViewSection footerTitle="A pogointel project." id="La9-DJ-czg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="9Fg-AA-pBZ" detailTextLabel="M13-Qo-4lJ" style="IBUITableViewCellStyleSubtitle" id="88Y-Bh-XBb">
                                         <rect key="frame" x="0.0" y="99" width="375" height="44"/>
@@ -358,6 +358,24 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="sIx-Rx-4Jg" style="IBUITableViewCellStyleDefault" id="aof-CK-YUg">
+                                        <rect key="frame" x="0.0" y="275" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aof-CK-YUg" id="mpi-AC-H3M">
+                                            <frame key="frameInset" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="With &lt;3 to pogointel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sIx-Rx-4Jg">
+                                                    <frame key="frameInset" minX="15" width="325" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

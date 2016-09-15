@@ -30,6 +30,10 @@ class AboutPageController: UITableViewController {
             if let url = NSURL(string: "https://keybase.io/pwnlambda") where UIApplication.sharedApplication().canOpenURL(url) {
                 UIApplication.sharedApplication().openURL(url)
             }
+        } else if indexPath.row == 4 && indexPath.section == 0 {
+            if let url = NSURL(string: "https://github.com/pogointel") where UIApplication.sharedApplication().canOpenURL(url) {
+                UIApplication.sharedApplication().openURL(url)
+            }
         }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
