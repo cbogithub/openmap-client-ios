@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170007471D7DB3AF00BE789D /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170007461D7DB3AF00BE789D /* HelpController.swift */; };
+		170007491D7DB51400BE789D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170007481D7DB51400BE789D /* TabBarController.swift */; };
+		173E0C441D7C8D3D0015ACA1 /* ivViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */; };
+		173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */; };
+		173F87DE1D81D66D00E4C4FD /* OpenPokeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */; };
+		173F87E51D81D69900E4C4FD /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173F87D31D81D43F00E4C4FD /* SnapshotHelper.swift */; };
+		175526701D840BC700BA9BA0 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755266F1D840BC700BA9BA0 /* SettingController.swift */; };
+		177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A71D708F7500842A62 /* AppDelegate.swift */; };
+		177E62AA1D708F7500842A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A91D708F7500842A62 /* ViewController.swift */; };
+		177E62AD1D708F7500842A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62AB1D708F7500842A62 /* Main.storyboard */; };
+		177E62AF1D708F7500842A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177E62AE1D708F7500842A62 /* Assets.xcassets */; };
+		177E62B21D708F7500842A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62B01D708F7500842A62 /* LaunchScreen.storyboard */; };
+		177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62BA1D70993B00842A62 /* AboutPageController.swift */; };
+		17892F161D71C02B003F3CBB /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */; };
+		179AC8761D7F2B8300525AA1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AC8751D7F2B8300525AA1 /* libz.tbd */; };
+		17B5E4091D89CCEA00D20527 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B5E4081D89CCEA00D20527 /* Reach.swift */; };
+		17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 17FA359D1D7C5A150037C4EC /* base_stats.json */; };
+		17FA35A61D7C5B1B0037C4EC /* base_stat_parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */; };
+		17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */; };
+		C31D670A3FE0785808ACEB3B /* Pods_OpenPokeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F131A30DAF4029B7C7ED4B /* Pods_OpenPokeMap.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		173F87E01D81D66D00E4C4FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177E629C1D708F7500842A62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177E62A31D708F7500842A62;
+			remoteInfo = OpenPokeMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		170007461D7DB3AF00BE789D /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
+		170007481D7DB51400BE789D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ivViewController.swift; path = ../ivViewController.swift; sourceTree = "<group>"; };
+		173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		173F87D31D81D43F00E4C4FD /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../OpenPokeMap/UITests/SnapshotHelper.swift; sourceTree = "<group>"; };
+		173F87DB1D81D66D00E4C4FD /* OpenPokeMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPokeMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPokeMapUITests.swift; sourceTree = "<group>"; };
+		173F87DF1D81D66D00E4C4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1755266F1D840BC700BA9BA0 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		177E62A41D708F7500842A62 /* OpenPokeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPokeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		177E62A71D708F7500842A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		177E62A91D708F7500842A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		177E62AC1D708F7500842A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		177E62AE1D708F7500842A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		177E62B11D708F7500842A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		177E62B31D708F7500842A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177E62BA1D70993B00842A62 /* AboutPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageController.swift; path = ../AboutPageController.swift; sourceTree = "<group>"; };
+		17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
+		179AC8751D7F2B8300525AA1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		17B5E4081D89CCEA00D20527 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		17FA359D1D7C5A150037C4EC /* base_stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = base_stats.json; path = ../base_stats.json; sourceTree = "<group>"; };
+		17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = base_stat_parser.swift; sourceTree = "<group>"; };
+		17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculate_IV.swift; sourceTree = "<group>"; };
+		8ECEC05B1CE96B466C93CE6F /* Pods-OpenPokeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenPokeMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap.release.xcconfig"; sourceTree = "<group>"; };
+		B4F131A30DAF4029B7C7ED4B /* Pods_OpenPokeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenPokeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5F6A7425AE791CB7EB08F5 /* Pods-OpenPokeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenPokeMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		173F87D81D81D66D00E4C4FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177E62A11D708F7500842A62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179AC8761D7F2B8300525AA1 /* libz.tbd in Frameworks */,
+				C31D670A3FE0785808ACEB3B /* Pods_OpenPokeMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073DEA10A308B1B9D7082034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4F131A30DAF4029B7C7ED4B /* Pods_OpenPokeMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		173F87DC1D81D66D00E4C4FD /* OpenPokeMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				173F87D31D81D43F00E4C4FD /* SnapshotHelper.swift */,
+				173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */,
+				173F87DF1D81D66D00E4C4FD /* Info.plist */,
+			);
+			path = OpenPokeMapUITests;
+			sourceTree = "<group>";
+		};
+		177E629B1D708F7500842A62 = {
+			isa = PBXGroup;
+			children = (
+				179AC8751D7F2B8300525AA1 /* libz.tbd */,
+				177E62A61D708F7500842A62 /* OpenPokeMap */,
+				173F87DC1D81D66D00E4C4FD /* OpenPokeMapUITests */,
+				177E62A51D708F7500842A62 /* Products */,
+				86041835D288A80B520FB47A /* Pods */,
+				073DEA10A308B1B9D7082034 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		177E62A51D708F7500842A62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				177E62A41D708F7500842A62 /* OpenPokeMap.app */,
+				173F87DB1D81D66D00E4C4FD /* OpenPokeMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177E62A61D708F7500842A62 /* OpenPokeMap */ = {
+			isa = PBXGroup;
+			children = (
+				17FA35A71D7C5B290037C4EC /* IV shit */,
+				177E62A71D708F7500842A62 /* AppDelegate.swift */,
+				170007481D7DB51400BE789D /* TabBarController.swift */,
+				177E62A91D708F7500842A62 /* ViewController.swift */,
+				177E62BA1D70993B00842A62 /* AboutPageController.swift */,
+				170007461D7DB3AF00BE789D /* HelpController.swift */,
+				1755266F1D840BC700BA9BA0 /* SettingController.swift */,
+				17B5E4081D89CCEA00D20527 /* Reach.swift */,
+				177E62AB1D708F7500842A62 /* Main.storyboard */,
+				177E62B01D708F7500842A62 /* LaunchScreen.storyboard */,
+				177E62AE1D708F7500842A62 /* Assets.xcassets */,
+				17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */,
+				177E62B31D708F7500842A62 /* Info.plist */,
+			);
+			path = OpenPokeMap;
+			sourceTree = "<group>";
+		};
+		17FA35A71D7C5B290037C4EC /* IV shit */ = {
+			isa = PBXGroup;
+			children = (
+				17FA35A51D7C5B1B0037C4EC /* base_stat_parser.swift */,
+				17FA35AA1D7C5E6E0037C4EC /* calculate_IV.swift */,
+				173E0C431D7C8D3D0015ACA1 /* ivViewController.swift */,
+				173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */,
+				17FA359D1D7C5A150037C4EC /* base_stats.json */,
+			);
+			path = "IV shit";
+			sourceTree = "<group>";
+		};
+		86041835D288A80B520FB47A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF5F6A7425AE791CB7EB08F5 /* Pods-OpenPokeMap.debug.xcconfig */,
+				8ECEC05B1CE96B466C93CE6F /* Pods-OpenPokeMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		173F87DA1D81D66D00E4C4FD /* OpenPokeMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 173F87E21D81D66D00E4C4FD /* Build configuration list for PBXNativeTarget "OpenPokeMapUITests" */;
+			buildPhases = (
+				173F87D71D81D66D00E4C4FD /* Sources */,
+				173F87D81D81D66D00E4C4FD /* Frameworks */,
+				173F87D91D81D66D00E4C4FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				173F87E11D81D66D00E4C4FD /* PBXTargetDependency */,
+			);
+			name = OpenPokeMapUITests;
+			productName = OpenPokeMapUITests;
+			productReference = 173F87DB1D81D66D00E4C4FD /* OpenPokeMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		177E62A31D708F7500842A62 /* OpenPokeMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177E62B61D708F7500842A62 /* Build configuration list for PBXNativeTarget "OpenPokeMap" */;
+			buildPhases = (
+				7E97DCCF2A8F2C7A241FE7FE /* [CP] Check Pods Manifest.lock */,
+				0B196B8B37FEAFCF91A8C4F6 /* Rollout.io pre-build */,
+				177E62A01D708F7500842A62 /* Sources */,
+				177E62A11D708F7500842A62 /* Frameworks */,
+				177E62A21D708F7500842A62 /* Resources */,
+				DE6588DE4269A2C0BF98E399 /* [CP] Embed Pods Frameworks */,
+				032AD62513339CCDC1DA8A23 /* [CP] Copy Pods Resources */,
+				9A0517CEF4C78657468DE3D8 /* Rollout.io post-build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenPokeMap;
+			productName = OpenPokeMap;
+			productReference = 177E62A41D708F7500842A62 /* OpenPokeMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177E629C1D708F7500842A62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "nullpixel Development";
+				TargetAttributes = {
+					173F87DA1D81D66D00E4C4FD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 177E62A31D708F7500842A62;
+					};
+					177E62A31D708F7500842A62 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AHEHG4CE9W;
+					};
+				};
+			};
+			buildConfigurationList = 177E629F1D708F7500842A62 /* Build configuration list for PBXProject "OpenPokeMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 177E629B1D708F7500842A62;
+			productRefGroup = 177E62A51D708F7500842A62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				177E62A31D708F7500842A62 /* OpenPokeMap */,
+				173F87DA1D81D66D00E4C4FD /* OpenPokeMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		173F87D91D81D66D00E4C4FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177E62A21D708F7500842A62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17892F161D71C02B003F3CBB /* TabBarIcons.xcassets in Resources */,
+				177E62B21D708F7500842A62 /* LaunchScreen.storyboard in Resources */,
+				177E62AF1D708F7500842A62 /* Assets.xcassets in Resources */,
+				177E62AD1D708F7500842A62 /* Main.storyboard in Resources */,
+				17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		032AD62513339CCDC1DA8A23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B196B8B37FEAFCF91A8C4F6 /* Rollout.io pre-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Rollout.io pre-build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ROLLOUT_lastXcodeprojConfiguration=7 \"${SRCROOT}/Pods/Rollout.io/lib/pre-build_xcode_phase\"";
+		};
+		7E97DCCF2A8F2C7A241FE7FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A0517CEF4C78657468DE3D8 /* Rollout.io post-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Rollout.io post-build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ROLLOUT_lastXcodeprojConfiguration=7 \"${SRCROOT}/Pods/Rollout.io/lib/post-build_xcode_phase\" -k 57d988f2578779261150f452";
+		};
+		DE6588DE4269A2C0BF98E399 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		173F87D71D81D66D00E4C4FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173F87DE1D81D66D00E4C4FD /* OpenPokeMapUITests.swift in Sources */,
+				173F87E51D81D69900E4C4FD /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177E62A01D708F7500842A62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175526701D840BC700BA9BA0 /* SettingController.swift in Sources */,
+				177E62AA1D708F7500842A62 /* ViewController.swift in Sources */,
+				17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */,
+				173E0C441D7C8D3D0015ACA1 /* ivViewController.swift in Sources */,
+				170007491D7DB51400BE789D /* TabBarController.swift in Sources */,
+				173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */,
+				177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */,
+				17FA35A61D7C5B1B0037C4EC /* base_stat_parser.swift in Sources */,
+				170007471D7DB3AF00BE789D /* HelpController.swift in Sources */,
+				17B5E4091D89CCEA00D20527 /* Reach.swift in Sources */,
+				177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		173F87E11D81D66D00E4C4FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177E62A31D708F7500842A62 /* OpenPokeMap */;
+			targetProxy = 173F87E01D81D66D00E4C4FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		177E62AB1D708F7500842A62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177E62AC1D708F7500842A62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		177E62B01D708F7500842A62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177E62B11D708F7500842A62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		173F87E31D81D66D00E4C4FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenPokeMapUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = OpenPokeMap;
+			};
+			name = Debug;
+		};
+		173F87E41D81D66D00E4C4FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenPokeMapUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = OpenPokeMap;
+			};
+			name = Release;
+		};
+		177E62B41D708F7500842A62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		177E62B51D708F7500842A62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		177E62B71D708F7500842A62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5F6A7425AE791CB7EB08F5 /* Pods-OpenPokeMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AHEHG4CE9W;
+				INFOPLIST_FILE = OpenPokeMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		177E62B81D708F7500842A62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECEC05B1CE96B466C93CE6F /* Pods-OpenPokeMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AHEHG4CE9W;
+				INFOPLIST_FILE = OpenPokeMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		173F87E21D81D66D00E4C4FD /* Build configuration list for PBXNativeTarget "OpenPokeMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				173F87E31D81D66D00E4C4FD /* Debug */,
+				173F87E41D81D66D00E4C4FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177E629F1D708F7500842A62 /* Build configuration list for PBXProject "OpenPokeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177E62B41D708F7500842A62 /* Debug */,
+				177E62B51D708F7500842A62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177E62B61D708F7500842A62 /* Build configuration list for PBXNativeTarget "OpenPokeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177E62B71D708F7500842A62 /* Debug */,
+				177E62B81D708F7500842A62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 177E629C1D708F7500842A62 /* Project object */;
+}

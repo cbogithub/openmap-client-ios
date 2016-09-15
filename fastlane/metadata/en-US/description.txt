@@ -1,0 +1,1 @@
+OpenPogoMap is part of PogoIntel, a project that aims to provide a truly free and open-source Pogo infrastructure.
