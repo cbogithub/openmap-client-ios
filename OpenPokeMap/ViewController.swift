@@ -65,8 +65,10 @@ class ViewController: UIViewController {
             print("Displaying no internet alert")
             let alertController = UIAlertController(title: "No Internet.", message: "Dangit. You need the internet to use this app.", preferredStyle: .Alert)
             alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
+                timer.invalidate()
                 self.reloadWebview()
                 self.checkInternet()
+                NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: "checkInternet", userInfo: nil, repeats: true)
                 })
             
             alertController.show()
