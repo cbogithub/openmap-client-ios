@@ -34,18 +34,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }()
     
     func checkInternet() {
-        let status = Reach().connectionStatus()
+        let reachability = Reachability()!
         
-        switch status {
-        case .unknown, .offline:
-            print("Not connected")
-            displayFailAlert(true)
-        case .online(.wwan):
-            _ = ViewController.__once
-        case .online(.wiFi):
-            // Migrator FIXME: multiple dispatch_once calls using the same dispatch_once_t token cannot be automatically migrated
-            dispatch_once(&Static.dispatchOnceToken) {
-                print("Connected via WiFI")
+        reachability.whenReachable = { reachability in
+            DispatchQueue.main.async() {
+                if reachability.isReachableViaWiFi {
+                    print("Reachable via WiFi")
+                } else {
+                    print("Reachable via Cellular")
+                }
+            }
+        }
+        reachability.whenUnreachable = { reachability in
+            DispatchQueue.main.async() {
+                print("Not reachable")
+                self.displayFailAlert(true)
             }
         }
         
@@ -75,8 +78,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.networkStatusChanged(_:)), name: NSNotification.Name(rawValue: ReachabilityStatusChangedNotification), object: nil)
-        Reach().monitorReachabilityChanges()
     }
     
     
@@ -98,14 +99,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     // MARK: - CLLocationManagerDelegate
     
-    func locationManager(_ manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
-        
-        let location = newLocation.coordinate
+    func locationManager(_ manager: CLLocationManager,
+                         didUpdateLocations locations: [CLLocation]){
+        let locationArray = locations as NSArray
+        var locationObj = locationArray.lastObject as! CLLocation
+        var coord = locationObj.coordinate
         
         if UIApplication.shared.applicationState == .active {
             print("App is active")
         } else {
-            print("App is backgrounded. New location is \(location)")
+            print("App is backgrounded. Latitude: \(coord.latitude)")
+            MakeRequest().makeRequest(lat: coord.latitude, lng: coord.longitude)
         }
     }
     

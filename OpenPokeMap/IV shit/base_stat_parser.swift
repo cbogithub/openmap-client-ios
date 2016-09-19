@@ -14,9 +14,8 @@ class BaseStats {
     func GetBaseStats(_ Pokemon: String){
         
         let jsonFilePath:NSString = Bundle.main.path(forResource: "base_stats", ofType: "json")! as NSString //JSON variables
-        let jsonData:Data = Data.dataWithContentsOfMappedFile(jsonFilePath as String) as! Data
-        let json = JSON(data: jsonData)
-        
+        let jsonData = NSData(contentsOfFile: "base_stats.json")
+        let json = JSON(data: jsonData as! Data)
         
         func ValidatePokemon(_ Pokemon: String) {
             for key in json {

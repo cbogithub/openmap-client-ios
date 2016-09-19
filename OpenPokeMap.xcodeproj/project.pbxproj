@@ -18,6 +18,7 @@
 		17682A001D904E6E00D98562 /* MakeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176829FF1D904E6E00D98562 /* MakeNotification.swift */; };
 		17682A021D904E7A00D98562 /* ParseReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682A011D904E7A00D98562 /* ParseReponse.swift */; };
 		17682A041D9052C500D98562 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17682A031D9052C500D98562 /* Alamofire.framework */; };
+		17682A061D9056E200D98562 /* PokemonID.json in Resources */ = {isa = PBXBuildFile; fileRef = 17682A051D9056E200D98562 /* PokemonID.json */; };
 		177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A71D708F7500842A62 /* AppDelegate.swift */; };
 		177E62AA1D708F7500842A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A91D708F7500842A62 /* ViewController.swift */; };
 		177E62AD1D708F7500842A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62AB1D708F7500842A62 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		176829FF1D904E6E00D98562 /* MakeNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeNotification.swift; path = Backgrounding/MakeNotification.swift; sourceTree = "<group>"; };
 		17682A011D904E7A00D98562 /* ParseReponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseReponse.swift; sourceTree = "<group>"; };
 		17682A031D9052C500D98562 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Users/jamiebishop/Library/Developer/Xcode/DerivedData/OpenPokeMap-agjckgrxxunbnefplojcjvmbmaxn/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		17682A051D9056E200D98562 /* PokemonID.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PokemonID.json; path = Backgrounding/PokemonID.json; sourceTree = "<group>"; };
 		177E62A41D708F7500842A62 /* OpenPokeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPokeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177E62A71D708F7500842A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177E62A91D708F7500842A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				176829FD1D904E4900D98562 /* MakeRequest.swift */,
 				176829FF1D904E6E00D98562 /* MakeNotification.swift */,
 				17682A011D904E7A00D98562 /* ParseReponse.swift */,
+				17682A051D9056E200D98562 /* PokemonID.json */,
 			);
 			name = Backgrounding;
 			sourceTree = "<group>";
@@ -217,13 +220,11 @@
 			buildConfigurationList = 177E62B61D708F7500842A62 /* Build configuration list for PBXNativeTarget "OpenPokeMap" */;
 			buildPhases = (
 				7E97DCCF2A8F2C7A241FE7FE /* [CP] Check Pods Manifest.lock */,
-				0B196B8B37FEAFCF91A8C4F6 /* Rollout.io pre-build */,
 				177E62A01D708F7500842A62 /* Sources */,
 				177E62A11D708F7500842A62 /* Frameworks */,
 				177E62A21D708F7500842A62 /* Resources */,
 				DE6588DE4269A2C0BF98E399 /* [CP] Embed Pods Frameworks */,
 				032AD62513339CCDC1DA8A23 /* [CP] Copy Pods Resources */,
-				9A0517CEF4C78657468DE3D8 /* Rollout.io post-build */,
 			);
 			buildRules = (
 			);
@@ -298,6 +299,7 @@
 				17892F161D71C02B003F3CBB /* TabBarIcons.xcassets in Resources */,
 				177E62B21D708F7500842A62 /* LaunchScreen.storyboard in Resources */,
 				177E62AF1D708F7500842A62 /* Assets.xcassets in Resources */,
+				17682A061D9056E200D98562 /* PokemonID.json in Resources */,
 				177E62AD1D708F7500842A62 /* Main.storyboard in Resources */,
 				17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */,
 			);
@@ -321,20 +323,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenPokeMap/Pods-OpenPokeMap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0B196B8B37FEAFCF91A8C4F6 /* Rollout.io pre-build */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Rollout.io pre-build";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "ROLLOUT_lastXcodeprojConfiguration=7 \"${SRCROOT}/Pods/Rollout.io/lib/pre-build_xcode_phase\"";
-		};
 		7E97DCCF2A8F2C7A241FE7FE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,20 +337,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
-		};
-		9A0517CEF4C78657468DE3D8 /* Rollout.io post-build */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Rollout.io post-build";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "ROLLOUT_lastXcodeprojConfiguration=7 \"${SRCROOT}/Pods/Rollout.io/lib/post-build_xcode_phase\" -k 57d988f2578779261150f452";
 		};
 		DE6588DE4269A2C0BF98E399 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

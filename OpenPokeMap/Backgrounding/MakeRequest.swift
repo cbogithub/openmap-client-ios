@@ -7,26 +7,25 @@
 //
 
 import Foundation
-import SwiftyJSON
 import Alamofire
 
 class MakeRequest {
-    
-    var url:String = "Your url"
-    url += "user/login"
-    var param = ["email": self.txtmail.text, "password":self.txtpassword.text]
-    request(.POST, url, parameters: param)
-    .responseJSON { (_, _, JSON, _) in
-    //println(JSON)
-    if let gData = JSON as? NSDictionary {
-    println(gData)
-    } else {
-    let alert=UIAlertView()
-    alert.title="Alert"
-    alert.message=gData.valueForKey("message")as? String
-    alert.addButtonWithTitle("OK")
-    alert.show()
+
+    func makeRequest(lat: Double, lng: Double) {
+        let url:String = "Your url"
+        let parameters: Parameters = [
+            "lat": lat,
+            "lng": lng
+            ]
+        request(url, method: .post, parameters: parameters)
+            .responseJSON { response in
+                print("Response JSON: \(response.result.value)")
+                let json = response.result.value
+                ParseResponse().ParseResponse(json: json as! String)
+            }
+
+        }
     }
-    }
-}
+
+
 

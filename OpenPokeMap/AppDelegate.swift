@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Rollout
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

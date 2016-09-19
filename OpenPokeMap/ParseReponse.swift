@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class ParseResponse {
+    func ParseResponse(json: String) {
+        
+    }
+    
+    //To @applebetas: I need to check the ID from the response from the API, compare it to the ID's in pokemonID.json, and send the result of that to MakeNotification.swift.
+    //You can find a example reponse here: https://ghostbin.com/paste/o3hg6 
+}
