@@ -16,67 +16,67 @@ class ivViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var PokemonDustPrice: UITextField!
     @IBOutlet weak var PoweredUpSwitch: UISwitch!
 
-    @IBAction func calcIV(sender: AnyObject) {
-        let Pokemon = String(PokemonName.text)
+    @IBAction func calcIV(_ sender: AnyObject) {
+        let Pokemon = String(describing: PokemonName.text)
         let CP = Int(PokemonCP.text!)
         let HP = Int(PokemonHP.text!)
         let DustPrice = Int(PokemonDustPrice.text!)
-        let PoweredUp = PoweredUpSwitch.on
+        let PoweredUp = PoweredUpSwitch.isOn
         let enabled = false
         
         if enabled {
             if Pokemon.isEmpty {
-                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
                 alertController.show()
             } else if CP == nil {
-                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
                 alertController.show()
             } else if HP == nil {
-                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
                 alertController.show()
             } else if DustPrice == nil {
-                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
                 alertController.show()
             } else {
                 CalculateIV().doEquation(Pokemon, CP: CP!, HP: HP!, DustPrice: DustPrice!, PoweredUp: PoweredUp)
             }
         } else {
-            let alertController = UIAlertController(title: "Error", message: "Error parsing pokemon. Ensure all fields are filled out.", preferredStyle: .Alert)
-            alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.Default, handler: nil))
+            let alertController = UIAlertController(title: "Error", message: "Error parsing pokemon. Ensure all fields are filled out.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
             alertController.show()
         }
     }
     
-    @IBAction func userTappedBackground(sender: AnyObject) {
+    @IBAction func userTappedBackground(_ sender: AnyObject) {
         view.endEditing(true)
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.05)
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.white.withAlphaComponent(0.05)
         let selectionView = UIView()
-        selectionView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+        selectionView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         cell.selectedBackgroundView = selectionView
     }
     
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let view = view as? UITableViewHeaderFooterView {
-            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            let color = UIColor.white.withAlphaComponent(0.5)
             view.detailTextLabel?.textColor = color
             view.textLabel?.textColor = color
         }
     }
     
-    override func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         if let view = view as? UITableViewHeaderFooterView {
-            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            let color = UIColor.white.withAlphaComponent(0.5)
             view.detailTextLabel?.textColor = color
             view.textLabel?.textColor = color
         }
@@ -84,28 +84,28 @@ class ivViewController: UITableViewController, UITextFieldDelegate {
     
     func initializeTextFields() {
         PokemonName.delegate = self
-        PokemonName.keyboardType = UIKeyboardType.ASCIICapable
+        PokemonName.keyboardType = UIKeyboardType.asciiCapable
         
         PokemonCP.delegate = self
-        PokemonCP.keyboardType = UIKeyboardType.NumberPad
+        PokemonCP.keyboardType = UIKeyboardType.numberPad
         
         PokemonHP.delegate = self
-        PokemonHP.keyboardType = UIKeyboardType.NumberPad
+        PokemonHP.keyboardType = UIKeyboardType.numberPad
         
         PokemonDustPrice.delegate = self
-        PokemonDustPrice.keyboardType = UIKeyboardType.NumberPad
+        PokemonDustPrice.keyboardType = UIKeyboardType.numberPad
     }
     
     // MARK: UITextFieldDelegate events and related methods
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if string.characters.count == 0 {
             return true
         }
         
         let currentText = textField.text ?? ""
-        let prospectiveText = (currentText as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        let prospectiveText = (currentText as NSString).replacingCharacters(in: range, with: string)
         
         switch textField {
 
@@ -126,7 +126,7 @@ class ivViewController: UITableViewController, UITextFieldDelegate {
         
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true;
     }

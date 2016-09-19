@@ -1,11 +1,10 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 project './OpenPokeMap.xcodeproj'
 use_frameworks!
 
 target 'OpenPokeMap' do
-    pod 'Rollout.io', '~> 1.3.1'
-    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'SwiftyJSON', :git => 'https://github.com/appsailor/SwiftyJSON.git', :branch => 'swift3'
     source 'https://github.com/CocoaPods/Specs.git'
+    pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :tag => '4.0.0'
     use_frameworks!
-    pod 'SwiftWebSocket'
 end

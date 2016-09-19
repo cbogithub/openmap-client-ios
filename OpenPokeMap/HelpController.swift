@@ -10,8 +10,8 @@ import UIKit
 
 class HelpController: UIViewController {
 
-    @IBAction func dismiss(sender: AnyObject) {
-            self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func dismiss(_ sender: AnyObject) {
+            self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

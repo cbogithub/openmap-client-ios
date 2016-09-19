@@ -14,6 +14,10 @@
 		173F87DE1D81D66D00E4C4FD /* OpenPokeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */; };
 		173F87E51D81D69900E4C4FD /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173F87D31D81D43F00E4C4FD /* SnapshotHelper.swift */; };
 		175526701D840BC700BA9BA0 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755266F1D840BC700BA9BA0 /* SettingController.swift */; };
+		176829FE1D904E4900D98562 /* MakeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176829FD1D904E4900D98562 /* MakeRequest.swift */; };
+		17682A001D904E6E00D98562 /* MakeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176829FF1D904E6E00D98562 /* MakeNotification.swift */; };
+		17682A021D904E7A00D98562 /* ParseReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682A011D904E7A00D98562 /* ParseReponse.swift */; };
+		17682A041D9052C500D98562 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17682A031D9052C500D98562 /* Alamofire.framework */; };
 		177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A71D708F7500842A62 /* AppDelegate.swift */; };
 		177E62AA1D708F7500842A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A91D708F7500842A62 /* ViewController.swift */; };
 		177E62AD1D708F7500842A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62AB1D708F7500842A62 /* Main.storyboard */; };
@@ -49,6 +53,11 @@
 		173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPokeMapUITests.swift; sourceTree = "<group>"; };
 		173F87DF1D81D66D00E4C4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1755266F1D840BC700BA9BA0 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		176829FB1D90477000D98562 /* OpenPokeMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenPokeMap.entitlements; sourceTree = "<group>"; };
+		176829FD1D904E4900D98562 /* MakeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeRequest.swift; path = Backgrounding/MakeRequest.swift; sourceTree = "<group>"; };
+		176829FF1D904E6E00D98562 /* MakeNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeNotification.swift; path = Backgrounding/MakeNotification.swift; sourceTree = "<group>"; };
+		17682A011D904E7A00D98562 /* ParseReponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseReponse.swift; sourceTree = "<group>"; };
+		17682A031D9052C500D98562 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Users/jamiebishop/Library/Developer/Xcode/DerivedData/OpenPokeMap-agjckgrxxunbnefplojcjvmbmaxn/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		177E62A41D708F7500842A62 /* OpenPokeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPokeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177E62A71D708F7500842A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177E62A91D708F7500842A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17682A041D9052C500D98562 /* Alamofire.framework in Frameworks */,
 				179AC8761D7F2B8300525AA1 /* libz.tbd in Frameworks */,
 				C31D670A3FE0785808ACEB3B /* Pods_OpenPokeMap.framework in Frameworks */,
 			);
@@ -91,6 +101,7 @@
 		073DEA10A308B1B9D7082034 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17682A031D9052C500D98562 /* Alamofire.framework */,
 				B4F131A30DAF4029B7C7ED4B /* Pods_OpenPokeMap.framework */,
 			);
 			name = Frameworks;
@@ -104,6 +115,16 @@
 				173F87DF1D81D66D00E4C4FD /* Info.plist */,
 			);
 			path = OpenPokeMapUITests;
+			sourceTree = "<group>";
+		};
+		176829FC1D904E0D00D98562 /* Backgrounding */ = {
+			isa = PBXGroup;
+			children = (
+				176829FD1D904E4900D98562 /* MakeRequest.swift */,
+				176829FF1D904E6E00D98562 /* MakeNotification.swift */,
+				17682A011D904E7A00D98562 /* ParseReponse.swift */,
+			);
+			name = Backgrounding;
 			sourceTree = "<group>";
 		};
 		177E629B1D708F7500842A62 = {
@@ -130,7 +151,9 @@
 		177E62A61D708F7500842A62 /* OpenPokeMap */ = {
 			isa = PBXGroup;
 			children = (
+				176829FB1D90477000D98562 /* OpenPokeMap.entitlements */,
 				17FA35A71D7C5B290037C4EC /* IV shit */,
+				176829FC1D904E0D00D98562 /* Backgrounding */,
 				177E62A71D708F7500842A62 /* AppDelegate.swift */,
 				170007481D7DB51400BE789D /* TabBarController.swift */,
 				177E62A91D708F7500842A62 /* ViewController.swift */,
@@ -223,11 +246,21 @@
 				TargetAttributes = {
 					173F87DA1D81D66D00E4C4FD = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = 177E62A31D708F7500842A62;
 					};
 					177E62A31D708F7500842A62 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = AHEHG4CE9W;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -362,10 +395,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17682A021D904E7A00D98562 /* ParseReponse.swift in Sources */,
 				175526701D840BC700BA9BA0 /* SettingController.swift in Sources */,
 				177E62AA1D708F7500842A62 /* ViewController.swift in Sources */,
 				17FA35AB1D7C5E6E0037C4EC /* calculate_IV.swift in Sources */,
+				176829FE1D904E4900D98562 /* MakeRequest.swift in Sources */,
 				173E0C441D7C8D3D0015ACA1 /* ivViewController.swift in Sources */,
+				17682A001D904E6E00D98562 /* MakeNotification.swift in Sources */,
 				170007491D7DB51400BE789D /* TabBarController.swift in Sources */,
 				173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */,
 				177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */,
@@ -414,7 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMapUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = OpenPokeMap;
 			};
 			name = Debug;
@@ -427,7 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMapUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = OpenPokeMap;
 			};
 			name = Release;
@@ -476,7 +512,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -517,7 +553,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -527,16 +563,17 @@
 			baseConfigurationReference = EF5F6A7425AE791CB7EB08F5 /* Pods-OpenPokeMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenPokeMap/OpenPokeMap.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AHEHG4CE9W;
 				INFOPLIST_FILE = OpenPokeMap/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -545,16 +582,17 @@
 			baseConfigurationReference = 8ECEC05B1CE96B466C93CE6F /* Pods-OpenPokeMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenPokeMap/OpenPokeMap.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AHEHG4CE9W;
 				INFOPLIST_FILE = OpenPokeMap/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nullpixel.OpenPokeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

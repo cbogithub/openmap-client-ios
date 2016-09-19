@@ -11,14 +11,14 @@ import SwiftyJSON
 
 class BaseStats {
     
-    func GetBaseStats(Pokemon: String){
+    func GetBaseStats(_ Pokemon: String){
         
-        let jsonFilePath:NSString = NSBundle.mainBundle().pathForResource("base_stats", ofType: "json")! //JSON variables
-        let jsonData:NSData = NSData.dataWithContentsOfMappedFile(jsonFilePath as String) as! NSData
+        let jsonFilePath:NSString = Bundle.main.path(forResource: "base_stats", ofType: "json")! as NSString //JSON variables
+        let jsonData:Data = Data.dataWithContentsOfMappedFile(jsonFilePath as String) as! Data
         let json = JSON(data: jsonData)
         
         
-        func ValidatePokemon(Pokemon: String) {
+        func ValidatePokemon(_ Pokemon: String) {
             for key in json {
                 if json["name"].string == Pokemon {
                     let PokemonJSON = json["name"]
@@ -38,7 +38,7 @@ class BaseStats {
         }
         
         
-    func ParseBaseStats(PokemonIsValid: Bool, BaseAttack: Double, BaseDefense: Double, BaseStamina: Double) {
+    func ParseBaseStats(_ PokemonIsValid: Bool, BaseAttack: Double, BaseDefense: Double, BaseStamina: Double) {
             
             if PokemonIsValid {
                 

@@ -10,34 +10,34 @@ import UIKit
 
 class SettingController: UITableViewController {
     
-    @IBAction func dismissView(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func dismissView(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBOutlet weak var debug: UISwitch!
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.05)
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.white.withAlphaComponent(0.05)
         let selectionView = UIView()
-        selectionView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+        selectionView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         cell.selectedBackgroundView = selectionView
     }
     
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let view = view as? UITableViewHeaderFooterView {
-            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            let color = UIColor.white.withAlphaComponent(0.5)
             view.detailTextLabel?.textColor = color
             view.textLabel?.textColor = color
         }
     }
     
-    override func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         if let view = view as? UITableViewHeaderFooterView {
-            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            let color = UIColor.white.withAlphaComponent(0.5)
             view.detailTextLabel?.textColor = color
             view.textLabel?.textColor = color
         }
@@ -48,7 +48,7 @@ class SettingController: UITableViewController {
 
         self.view.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
         self.tableView.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
-        let debugSwitch = debug.on
+        let debugSwitch = debug.isOn
     }
 
     override func didReceiveMemoryWarning() {

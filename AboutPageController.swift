@@ -10,53 +10,53 @@ import UIKit
 
 class AboutPageController: UITableViewController {
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.row == 0 && indexPath.section == 0 {
-            if let url = NSURL(string: "http://www.openstreetmap.org/") where UIApplication.sharedApplication().canOpenURL(url) {
-                UIApplication.sharedApplication().openURL(url)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (indexPath as NSIndexPath).row == 0 && (indexPath as NSIndexPath).section == 0 {
+            if let url = URL(string: "http://www.openstreetmap.org/") , UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.openURL(url)
             }
         }
-        if indexPath.row == 1 && indexPath.section == 0 {
-            if let url = NSURL(string: "https://icons8.com") where UIApplication.sharedApplication().canOpenURL(url) {
-                UIApplication.sharedApplication().openURL(url)
+        if (indexPath as NSIndexPath).row == 1 && (indexPath as NSIndexPath).section == 0 {
+            if let url = URL(string: "https://icons8.com") , UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.openURL(url)
             }
         }
-        else if indexPath.row == 2 && indexPath.section == 0 {
-            if let url = NSURL(string: "https://keybase.io/nullpixel") where UIApplication.sharedApplication().canOpenURL(url) {
-                UIApplication.sharedApplication().openURL(url)
+        else if (indexPath as NSIndexPath).row == 2 && (indexPath as NSIndexPath).section == 0 {
+            if let url = URL(string: "https://keybase.io/nullpixel") , UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.openURL(url)
             }
         }
-        else if indexPath.row == 3 && indexPath.section == 0 {
-            if let url = NSURL(string: "https://keybase.io/pwnlambda") where UIApplication.sharedApplication().canOpenURL(url) {
-                UIApplication.sharedApplication().openURL(url)
+        else if (indexPath as NSIndexPath).row == 3 && (indexPath as NSIndexPath).section == 0 {
+            if let url = URL(string: "https://keybase.io/pwnlambda") , UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.openURL(url)
             }
-        } else if indexPath.row == 4 && indexPath.section == 0 {
-            if let url = NSURL(string: "https://github.com/pogointel") where UIApplication.sharedApplication().canOpenURL(url) {
-                UIApplication.sharedApplication().openURL(url)
+        } else if (indexPath as NSIndexPath).row == 4 && (indexPath as NSIndexPath).section == 0 {
+            if let url = URL(string: "https://github.com/pogointel") , UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.openURL(url)
             }
         }
         
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.05)
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.white.withAlphaComponent(0.05)
         let selectionView = UIView()
-        selectionView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+        selectionView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         cell.selectedBackgroundView = selectionView
     }
     
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let view = view as? UITableViewHeaderFooterView {
-            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            let color = UIColor.white.withAlphaComponent(0.5)
             view.detailTextLabel?.textColor = color
             view.textLabel?.textColor = color
         }
     }
     
-    override func tableView(tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         if let view = view as? UITableViewHeaderFooterView {
-            let color = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+            let color = UIColor.white.withAlphaComponent(0.5)
             view.detailTextLabel?.textColor = color
             view.textLabel?.textColor = color
         }
@@ -72,7 +72,7 @@ class AboutPageController: UITableViewController {
 }
 
 extension UIColor{
-    func HexToColor(hexString: String, alpha:CGFloat? = 1.0) -> UIColor {
+    func HexToColor(_ hexString: String, alpha:CGFloat? = 1.0) -> UIColor {
         // Convert hex string to an integer
         let hexint = Int(self.intFromHexString(hexString))
         let red = CGFloat((hexint & 0xff0000) >> 16) / 255.0
@@ -84,14 +84,14 @@ extension UIColor{
         return color
     }
     
-    func intFromHexString(hexStr: String) -> UInt32 {
+    func intFromHexString(_ hexStr: String) -> UInt32 {
         var hexInt: UInt32 = 0
         // Create scanner
-        let scanner: NSScanner = NSScanner(string: hexStr)
+        let scanner: Scanner = Scanner(string: hexStr)
         // Tell scanner to skip the # character
-        scanner.charactersToBeSkipped = NSCharacterSet(charactersInString: "#")
+        scanner.charactersToBeSkipped = CharacterSet(charactersIn: "#")
         // Scan hex value
-        scanner.scanHexInt(&hexInt)
+        scanner.scanHexInt32(&hexInt)
         return hexInt
     }
 }

@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-OpenPokeMap.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftWebSocket.xcscheme</key>
+		<key>Pods-OpenPokeMap.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>729E7050FC301774E64998FAB5D59030</key>
+		<key>676C89EE97AA241ED4A81AD01CE14E8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CAC19610C32808B5CF86592281251923</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E8F3E8C15E4977E51AD0B57CD283E879</key>
+		<key>DB2CF11DC317C7E1081664E53DBE65A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

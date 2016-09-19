@@ -6,65 +6,88 @@
 //  Copyright © 2016 nullpixel Development. All rights reserved.
 //
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
+    
+    private static var __once: () = {
+                print("Connected via WWAN")
+            }()
     
     @IBOutlet weak var webView: UIWebView!
     
     let debug = true
-    var timer = NSTimer()
+    var timer = Timer()
     let internetCheckInterval = Double(5)
     var successfulTimes = 0
+    
+    struct Static {
+        static var dispatchOnceToken: Int = 0
+    }
+    
+    lazy var locationManager: CLLocationManager! = {
+        let manager = CLLocationManager()
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.delegate = self
+        manager.requestAlwaysAuthorization()
+        return manager
+    }()
     
     func checkInternet() {
         let status = Reach().connectionStatus()
         
         switch status {
-        case .Unknown, .Offline:
+        case .unknown, .offline:
             print("Not connected")
             displayFailAlert(true)
-        case .Online(.WWAN):
-            print("Connected via WWAN")
-        case .Online(.WiFi):
-            print("Connected via WiFi")
+        case .online(.wwan):
+            _ = ViewController.__once
+        case .online(.wiFi):
+            // Migrator FIXME: multiple dispatch_once calls using the same dispatch_once_t token cannot be automatically migrated
+            dispatch_once(&Static.dispatchOnceToken) {
+                print("Connected via WiFI")
+            }
         }
         
     }
     
     func reloadWebview() {
-        let url = NSURL(string: "https://openpokemap.pw/mobile.html")
-        let request = NSURLRequest(URL: url!)
+        let url = URL(string: "https://openpokemap.pw/mobile.html")
+        let request = URLRequest(url: url!)
         webView.scrollView.maximumZoomScale = 1.0;
         webView.scrollView.minimumZoomScale = 1.0;
         webView.loadRequest(request)
     }
    
-    func networkStatusChanged(notification: NSNotification) {
-        let userInfo = notification.userInfo
+    func networkStatusChanged(_ notification: Notification) {
+        let userInfo = (notification as NSNotification).userInfo
         print(userInfo)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: "checkInternet", userInfo: nil, repeats: true)
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.startUpdatingLocation()
+        var timer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(ViewController.checkInternet), userInfo: nil, repeats: true)
         
         reloadWebview()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("networkStatusChanged:"), name: ReachabilityStatusChangedNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.networkStatusChanged(_:)), name: NSNotification.Name(rawValue: ReachabilityStatusChangedNotification), object: nil)
         Reach().monitorReachabilityChanges()
     }
     
     
     // MARK: Websocket Delegate Methods.
     
-    func displayFailAlert(network: Bool) {
+    func displayFailAlert(_ network: Bool) {
         if network {
             print("Displaying no internet alert")
-            let alertController = UIAlertController(title: "No Internet.", message: "Dangit. You need the internet to use this app.", preferredStyle: .Alert)
-            alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
+            timer.invalidate()
+            let alertController = UIAlertController(title: "No Internet.", message: "Dangit. You need the internet to use this app.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
                 self.reloadWebview()
                 self.checkInternet()
                 })
@@ -73,48 +96,25 @@ class ViewController: UIViewController {
         }
     }
     
-//    func connectToWS(socketURL: WebSocket) {
-//        var i = 1
-//        let ws = socketURL
-//        ws.event.open = {
-//            print("Connected to socket \(ws)")
-//        }
-//        ws.event.close = { code, reason, clean in
-//
-//            if self.debug {
-//                print("Couldn't connect to websocket. Start it, scrub.")
-//            } else {
-//                
-//                if i == 5 {
-//                    self.displayFailAlert(false)
-//                    i = i + 1
-//                } else {
-//                    print("Could not connect. Retrying the \(i)'st time.")
-//                    ws.open()
-//                    i = i + 1
-//                }
-//            }
-//            
-//        }
-//        
-//        ws.event.error = { error in
-//            print("error \(error)")
-//        }
-//        ws.event.message = { message in
-//            if let text = message as? String {
-//                print("recv: \(text)")
-//                self.respondToChallenge(text)
-//            }
-//        }
-//    }
-//    
+    // MARK: - CLLocationManagerDelegate
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+        
+        let location = newLocation.coordinate
+        
+        if UIApplication.shared.applicationState == .active {
+            print("App is active")
+        } else {
+            print("App is backgrounded. New location is \(location)")
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 }
@@ -125,13 +125,13 @@ extension UIAlertController {
         present(true, completion: nil)
     }
     
-    func present(animated: Bool, completion: (() -> Void)?) {
-        if let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController {
+    func present(_ animated: Bool, completion: (() -> Void)?) {
+        if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
             presentFromController(rootVC, animated: animated, completion: completion)
         }
     }
     
-    private func presentFromController(controller: UIViewController, animated: Bool, completion: (() -> Void)?) {
+    fileprivate func presentFromController(_ controller: UIViewController, animated: Bool, completion: (() -> Void)?) {
         if let navVC = controller as? UINavigationController,
             let visibleVC = navVC.visibleViewController {
             presentFromController(visibleVC, animated: animated, completion: completion)
@@ -140,24 +140,24 @@ extension UIAlertController {
                 let selectedVC = tabVC.selectedViewController {
                 presentFromController(selectedVC, animated: animated, completion: completion)
             } else {
-                controller.presentViewController(self, animated: animated, completion: completion);
+                controller.present(self, animated: animated, completion: completion);
         }
     }
 }
 
 extension UIImage {
-    func imageWithColor(tintColor: UIColor) -> UIImage {
+    func imageWithColor(_ tintColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
         
-        let context = UIGraphicsGetCurrentContext()! as CGContextRef
-        CGContextTranslateCTM(context, 0, self.size.height)
-        CGContextScaleCTM(context, 1.0, -1.0);
-        CGContextSetBlendMode(context, .Normal)
+        let context = UIGraphicsGetCurrentContext()! as CGContext
+        context.translateBy(x: 0, y: self.size.height)
+        context.scaleBy(x: 1.0, y: -1.0);
+        context.setBlendMode(.normal)
         
-        let rect = CGRectMake(0, 0, self.size.width, self.size.height) as CGRect
-        CGContextClipToMask(context, rect, self.CGImage!)
+        let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height) as CGRect
+        context.clip(to: rect, mask: self.cgImage!)
         tintColor.setFill()
-        CGContextFillRect(context, rect)
+        context.fill(rect)
         
         let newImage = UIGraphicsGetImageFromCurrentImageContext()! as UIImage
         UIGraphicsEndImageContext()
