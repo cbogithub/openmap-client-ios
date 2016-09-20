@@ -68,6 +68,10 @@ class AboutPageController: UITableViewController {
         self.tableView.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 
 }
 

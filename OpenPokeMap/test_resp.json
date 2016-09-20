@@ -1,0 +1,196 @@
+{
+    "Ok": true,
+    "Error": "",
+    "Response": [
+                 {
+                 "Type": 3,
+                 "PokemonId": 0,
+                 "Id": "6e783aa133da45e7b7b82d46fab7b634.12",
+                 "Lat": 34.008184,
+                 "Lng": -118.497855,
+                 "Expiry": 0,
+                 "Lured": false,
+                 "Team": 2
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "8a89246e6bb74beb9aa8d852588b9bb3.12",
+                 "Lat": 34.00862,
+                 "Lng": -118.498159,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 1,
+                 "PokemonId": 58,
+                 "Id": "9ctcvvmptpj1",
+                 "Lat": 34.00888179879832,
+                 "Lng": -118.49784634188305,
+                 "Expiry": 1474253666,
+                 "Lured": false,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "975805c30dc6403ab07856c607e9e9a9.12",
+                 "Lat": 34.009034,
+                 "Lng": -118.497669,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "7081ff4cf8644457ac9387ff28917291.16",
+                 "Lat": 34.008888,
+                 "Lng": -118.497316,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "ba251199009c403b8829cfa304719bac.16",
+                 "Lat": 34.008096,
+                 "Lng": -118.49908,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "246cd78fc6cb4addb7ff69d695eca867.12",
+                 "Lat": 34.009471,
+                 "Lng": -118.497344,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "455be2e5e5c34b40b20dcde1d6c4277f.16",
+                 "Lat": 34.009735,
+                 "Lng": -118.497273,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "c289811dc758426f9c4f0b6f0ae71ecc.16",
+                 "Lat": 34.009634,
+                 "Lng": -118.496498,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 3,
+                 "PokemonId": 0,
+                 "Id": "5f8273ea51204daeadc1c5dec6e738d3.12",
+                 "Lat": 34.007551,
+                 "Lng": -118.500081,
+                 "Expiry": 0,
+                 "Lured": false,
+                 "Team": 2
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "11410a03fc7f4c9f9c392e8fb2353fac.16",
+                 "Lat": 34.009861,
+                 "Lng": -118.495626,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "afee005c1ec94567b727a8f74202dec0.16",
+                 "Lat": 34.010538,
+                 "Lng": -118.496394,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "b13d36808456456fb94fcf4135d53ddc.16",
+                 "Lat": 34.010112,
+                 "Lng": -118.495739,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "c419e15ba3664ce8bc90267b4ecc3ebc.16",
+                 "Lat": 34.010408,
+                 "Lng": -118.495925,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "648e23a2e3d24d05a61b714cdd2267d5.16",
+                 "Lat": 34.009773,
+                 "Lng": -118.495111,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "e3117e097a89428dbf7cc7b786f4b847.16",
+                 "Lat": 34.009282,
+                 "Lng": -118.494794,
+                 "Expiry": 0,
+                 "Lured": false,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "31b1a0e2cadf4603855ff5a5d80ef225.16",
+                 "Lat": 34.010773,
+                 "Lng": -118.495416,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "7c8900b58631486ca67a81e6cb62f924.16",
+                 "Lat": 34.008486,
+                 "Lng": -118.49404,
+                 "Expiry": 0,
+                 "Lured": true,
+                 "Team": 0
+                 },
+                 {
+                 "Type": 2,
+                 "PokemonId": 0,
+                 "Id": "b6dc1f059b5543ef8f970a9cfdaab36d.16",
+                 "Lat": 34.008316,
+                 "Lng": -118.493858,
+                 "Expiry": 0,
+                 "Lured": false,
+                 "Team": 0
+                 }
+                 ]
+}

@@ -48,7 +48,8 @@ class SettingController: UITableViewController {
 
         self.view.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
         self.tableView.backgroundColor = UIColor().HexToColor("#36393E", alpha: 1.0)
-        let debugSwitch = debug.isOn
+        // TODO: Fix debug switch
+        // let debugSwitch = debug.isOn
     }
 
     override func didReceiveMemoryWarning() {

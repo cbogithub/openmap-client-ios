@@ -12,18 +12,19 @@ import Alamofire
 class MakeRequest {
 
     func makeRequest(lat: Double, lng: Double) {
-        let url:String = "Your url"
+        /*let url = "Your url"
         let parameters: Parameters = [
             "lat": lat,
             "lng": lng
-            ]
+        ]
+        
         request(url, method: .post, parameters: parameters)
-            .responseJSON { response in
-                print("Response JSON: \(response.result.value)")
-                let json = response.result.value
-                ParseResponse().ParseResponse(json: json as! String)
-            }
-
+            .responseJSON { response in*/
+                //print("Response JSON: \(response.result.value)")
+                //let json = response.result.value
+        let json = try! Data(contentsOf: Bundle.main.url(forResource: "test_resp", withExtension: "json")!)
+        ParseResponse().parseResponse(json: json)
+            //}
         }
     }
 
