@@ -16,47 +16,31 @@ class ivViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var PokemonDustPrice: UITextField!
     @IBOutlet weak var PoweredUpSwitch: UISwitch!
 
-    @IBAction func calcIV(_ sender: AnyObject) {
-        let Pokemon = String(describing: PokemonName.text)
+    func calcIV() {
+        let pokemon = PokemonName.text
         let CP = Int(PokemonCP.text!)
         let HP = Int(PokemonHP.text!)
-        let DustPrice = Int(PokemonDustPrice.text!)
-        let PoweredUp = PoweredUpSwitch.isOn
+        let dustPrice = Int(PokemonDustPrice.text!)
+        let poweredUp = PoweredUpSwitch.isOn
         let enabled = false
         
         if enabled {
-            if Pokemon.isEmpty {
+            if pokemon?.isEmpty ?? true || CP == nil || HP == nil || dustPrice == nil {
                 let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
-                alertController.show()
-            } else if CP == nil {
-                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
-                alertController.show()
-            } else if HP == nil {
-                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
-                alertController.show()
-            } else if DustPrice == nil {
-                let alertController = UIAlertController(title: "Error", message: "You did not fill out all the fields.", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 alertController.show()
             } else {
-                CalculateIV().doEquation(Pokemon, CP: CP!, HP: HP!, DustPrice: DustPrice!, PoweredUp: PoweredUp)
+                CalculateIV().doEquation(for: pokemon, CP: CP!, HP: HP!, dustPrice: dustPrice!, poweredUp: poweredUp)
             }
         } else {
             let alertController = UIAlertController(title: "Error", message: "Error parsing pokemon. Ensure all fields are filled out.", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             alertController.show()
         }
     }
     
     @IBAction func userTappedBackground(_ sender: AnyObject) {
         view.endEditing(true)
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -126,9 +110,20 @@ class ivViewController: UITableViewController, UITextFieldDelegate {
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 && indexPath.section == 1 {
+            calcIV()
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        return true;
+        return true
     }
     
     override func viewDidLoad() {

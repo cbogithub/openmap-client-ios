@@ -16,15 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let redColor = UIColor().HexToColor("#E95C5A", alpha: 1.0)
-        let grayColor = UIColor().HexToColor("#ccc", alpha: 1.0)
+        // TODO: Use gray
+        // let grayColor = UIColor().HexToColor("#ccc", alpha: 1.0)
         UITabBar.appearance().tintColor = UIColor.white
         UITabBar.appearance().barTintColor = redColor
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState())
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
+        UINavigationBar.appearance().barStyle = .blackTranslucent
         UINavigationBar.appearance().barTintColor = redColor
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        window?.tintColor = redColor
         application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
         return true
     }

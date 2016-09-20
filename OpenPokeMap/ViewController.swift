@@ -7,6 +7,7 @@
 //
 import UIKit
 import CoreLocation
+import WebKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -14,12 +15,41 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 print("Connected via WWAN")
             }()
     
-    @IBOutlet weak var webView: UIWebView!
+    var webView: WKWebView!
     
     let debug = true
     var timer = Timer()
     let internetCheckInterval = Double(5)
     var successfulTimes = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.startUpdatingLocation()
+        _ =  Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(ViewController.checkInternet), userInfo: nil, repeats: true)
+        
+        setupWebView()
+        reloadWebview()
+    }
+    
+    private func setupWebView() {
+        webView = WKWebView()
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(webView)
+        webView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
+        webView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor).isActive = true
+        webView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        webView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     
     struct Static {
         static var dispatchOnceToken: Int = 0
@@ -39,7 +69,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         reachability.whenReachable = { reachability in
             DispatchQueue.main.async() {
                 if reachability.isReachableViaWiFi {
-                    print("Reachable via WiFi")
+                    print("Reachable via Wi-Fi")
                 } else {
                     print("Reachable via Cellular")
                 }
@@ -57,29 +87,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func reloadWebview() {
         let url = URL(string: "https://openpokemap.pw/mobile.html")
         let request = URLRequest(url: url!)
-        webView.scrollView.maximumZoomScale = 1.0;
-        webView.scrollView.minimumZoomScale = 1.0;
-        webView.loadRequest(request)
+        webView.scrollView.maximumZoomScale = 1.0
+        webView.scrollView.minimumZoomScale = 1.0
+        webView.load(request)
     }
    
     func networkStatusChanged(_ notification: Notification) {
         let userInfo = (notification as NSNotification).userInfo
         print(userInfo)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        locationManager.startUpdatingLocation()
-        var timer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(ViewController.checkInternet), userInfo: nil, repeats: true)
-        
-        reloadWebview()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
     
     // MARK: Websocket Delegate Methods.
     
@@ -101,15 +117,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager,
                          didUpdateLocations locations: [CLLocation]){
-        let locationArray = locations as NSArray
-        var locationObj = locationArray.lastObject as! CLLocation
-        var coord = locationObj.coordinate
-        
-        if UIApplication.shared.applicationState == .active {
-            print("App is active")
-        } else {
-            print("App is backgrounded. Latitude: \(coord.latitude)")
-            MakeRequest().makeRequest(lat: coord.latitude, lng: coord.longitude)
+        let locationArray = locations
+        if let locationObj = locationArray.last {
+            let coord = locationObj.coordinate
+            
+            if UIApplication.shared.applicationState == .active {
+                print("App is active")
+            } else {
+                print("App is backgrounded. Latitude: \(coord.latitude)")
+                MakeRequest().makeRequest(lat: coord.latitude, lng: coord.longitude)
+            }
         }
     }
     
