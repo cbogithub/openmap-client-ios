@@ -7,26 +7,32 @@
 //
 
 import Foundation
+import SwiftyJSON
 import Alamofire
 
 class MakeRequest {
 
     func makeRequest(lat: Double, lng: Double) {
-        /*let url = "Your url"
+        let url = "https://api.openpokemap.pw/c"
         let parameters: Parameters = [
             "lat": lat,
-            "lng": lng
+            "lng": lng,
+            "p": "1"
         ]
         
         request(url, method: .post, parameters: parameters)
-            .responseJSON { response in*/
-                //print("Response JSON: \(response.result.value)")
-                //let json = response.result.value
-        let json = try! Data(contentsOf: Bundle.main.url(forResource: "test_resp", withExtension: "json")!)
-        ParseResponse().parseResponse(json: json)
-            //}
+            .responseJSON { response in
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    print("JSON: \(json)")
+                    
+                    ParseResponse().parseResponse(json: json)
+                }
+
+//        let json = try! Data(contentsOf: Bundle.main.url(forResource: "test_resp", withExtension: "json")!)
+                //}
         }
     }
-
+}
 
 

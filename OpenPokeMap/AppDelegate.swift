@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let redColor = UIColor().HexToColor("#E95C5A", alpha: 1.0)
+        let redColor = UIColor().HexToColor("#F44336", alpha: 1.0)
         // TODO: Use gray
         // let grayColor = UIColor().HexToColor("#ccc", alpha: 1.0)
         UITabBar.appearance().tintColor = UIColor.white

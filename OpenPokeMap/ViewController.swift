@@ -30,6 +30,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         setupWebView()
         reloadWebview()
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: Notification.Name.UIApplicationWillResignActive, object: nil)
+    }
+    
+    func appMovedToBackground() {
+        print("App moved to background!")
     }
     
     private func setupWebView() {
@@ -85,7 +92,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func reloadWebview() {
-        let url = URL(string: "https://openpokemap.pw/mobile.html")
+//        let url = URL(string: "https://openpokemap.pw")
+        let url = URL(string: "https://ios.openpokemap.pw")
         let request = URLRequest(url: url!)
         webView.scrollView.maximumZoomScale = 1.0
         webView.scrollView.minimumZoomScale = 1.0
