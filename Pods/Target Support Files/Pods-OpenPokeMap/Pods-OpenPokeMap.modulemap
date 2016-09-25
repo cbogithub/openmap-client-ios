@@ -1,6 +1,0 @@
-framework module Pods_OpenPokeMap {
-  umbrella header "Pods-OpenPokeMap-umbrella.h"
-
-  export *
-  module * { export * }
-}

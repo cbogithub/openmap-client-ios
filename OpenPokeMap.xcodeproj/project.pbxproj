@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		170007471D7DB3AF00BE789D /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170007461D7DB3AF00BE789D /* HelpController.swift */; };
-		170007491D7DB51400BE789D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170007481D7DB51400BE789D /* TabBarController.swift */; };
-		173E0C441D7C8D3D0015ACA1 /* IVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C431D7C8D3D0015ACA1 /* IVViewController.swift */; };
 		173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */; };
 		173F87DE1D81D66D00E4C4FD /* OpenPokeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */; };
 		173F87E51D81D69900E4C4FD /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173F87D31D81D43F00E4C4FD /* SnapshotHelper.swift */; };
-		175526701D840BC700BA9BA0 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755266F1D840BC700BA9BA0 /* SettingController.swift */; };
 		176829FE1D904E4900D98562 /* MakeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176829FD1D904E4900D98562 /* MakeRequest.swift */; };
 		17682A001D904E6E00D98562 /* NotificationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176829FF1D904E6E00D98562 /* NotificationFactory.swift */; };
 		17682A021D904E7A00D98562 /* ParseReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682A011D904E7A00D98562 /* ParseReponse.swift */; };
 		17682A041D9052C500D98562 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17682A031D9052C500D98562 /* Alamofire.framework */; };
 		17682A061D9056E200D98562 /* PokemonID.json in Resources */ = {isa = PBXBuildFile; fileRef = 17682A051D9056E200D98562 /* PokemonID.json */; };
-		177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A71D708F7500842A62 /* AppDelegate.swift */; };
-		177E62AA1D708F7500842A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62A91D708F7500842A62 /* ViewController.swift */; };
 		177E62AD1D708F7500842A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62AB1D708F7500842A62 /* Main.storyboard */; };
 		177E62AF1D708F7500842A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177E62AE1D708F7500842A62 /* Assets.xcassets */; };
 		177E62B21D708F7500842A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177E62B01D708F7500842A62 /* LaunchScreen.storyboard */; };
-		177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E62BA1D70993B00842A62 /* AboutPageController.swift */; };
 		17892F161D71C02B003F3CBB /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */; };
 		17B5E4091D89CCEA00D20527 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B5E4081D89CCEA00D20527 /* Reach.swift */; };
+		17F571311D97EFB10096C1AE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F571301D97EFB10096C1AE /* MapKit.framework */; };
+		17F571351D97F91B0096C1AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F571341D97F91B0096C1AE /* AppDelegate.swift */; };
+		17F5713A1D97F9670096C1AE /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F571371D97F9670096C1AE /* HelpController.swift */; };
+		17F5713B1D97F9670096C1AE /* IVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F571381D97F9670096C1AE /* IVViewController.swift */; };
+		17F5713C1D97F9670096C1AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F571391D97F9670096C1AE /* ViewController.swift */; };
+		17F5713F1D97F9920096C1AE /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5713D1D97F9920096C1AE /* SettingController.swift */; };
+		17F571401D97F9920096C1AE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5713E1D97F9920096C1AE /* TabBarController.swift */; };
+		17F571421D97F9BF0096C1AE /* AboutPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F571411D97F9BF0096C1AE /* AboutPageController.swift */; };
+		17F571441D97F9F10096C1AE /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F571431D97F9F10096C1AE /* UIAlertController.swift */; };
+		17F571481D97FA480096C1AE /* TabBarImageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F571471D97FA480096C1AE /* TabBarImageColor.swift */; };
+		17F5714A1D97FA8F0096C1AE /* Array+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F571491D97FA8F0096C1AE /* Array+Unique.swift */; };
 		17FA359E1D7C5A150037C4EC /* base_stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 17FA359D1D7C5A150037C4EC /* base_stats.json */; };
 		17FA35A61D7C5B1B0037C4EC /* BaseStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35A51D7C5B1B0037C4EC /* BaseStats.swift */; };
 		17FA35AB1D7C5E6E0037C4EC /* CalculateIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FA35AA1D7C5E6E0037C4EC /* CalculateIV.swift */; };
@@ -46,15 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		170007461D7DB3AF00BE789D /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
-		170007481D7DB51400BE789D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		173E0C431D7C8D3D0015ACA1 /* IVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IVViewController.swift; path = ../IVViewController.swift; sourceTree = "<group>"; };
 		173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		173F87D31D81D43F00E4C4FD /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../OpenPokeMap/UITests/SnapshotHelper.swift; sourceTree = "<group>"; };
 		173F87DB1D81D66D00E4C4FD /* OpenPokeMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenPokeMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		173F87DD1D81D66D00E4C4FD /* OpenPokeMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPokeMapUITests.swift; sourceTree = "<group>"; };
 		173F87DF1D81D66D00E4C4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1755266F1D840BC700BA9BA0 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		176829FB1D90477000D98562 /* OpenPokeMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenPokeMap.entitlements; sourceTree = "<group>"; };
 		176829FD1D904E4900D98562 /* MakeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeRequest.swift; path = Backgrounding/MakeRequest.swift; sourceTree = "<group>"; };
 		176829FF1D904E6E00D98562 /* NotificationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationFactory.swift; path = Backgrounding/NotificationFactory.swift; sourceTree = "<group>"; };
@@ -62,15 +62,23 @@
 		17682A031D9052C500D98562 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Users/jamiebishop/Library/Developer/Xcode/DerivedData/OpenPokeMap-agjckgrxxunbnefplojcjvmbmaxn/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		17682A051D9056E200D98562 /* PokemonID.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PokemonID.json; path = Backgrounding/PokemonID.json; sourceTree = "<group>"; };
 		177E62A41D708F7500842A62 /* OpenPokeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenPokeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		177E62A71D708F7500842A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		177E62A91D708F7500842A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		177E62AC1D708F7500842A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		177E62AE1D708F7500842A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177E62B11D708F7500842A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		177E62B31D708F7500842A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		177E62BA1D70993B00842A62 /* AboutPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageController.swift; path = ../AboutPageController.swift; sourceTree = "<group>"; };
 		17892F151D71C02B003F3CBB /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
 		17B5E4081D89CCEA00D20527 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		17F571301D97EFB10096C1AE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		17F571341D97F91B0096C1AE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "App Delegate/AppDelegate.swift"; sourceTree = "<group>"; };
+		17F571371D97F9670096C1AE /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpController.swift; path = "OpenPokeMap/View Controllers/HelpController.swift"; sourceTree = "<group>"; };
+		17F571381D97F9670096C1AE /* IVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IVViewController.swift; path = "OpenPokeMap/View Controllers/IVViewController.swift"; sourceTree = "<group>"; };
+		17F571391D97F9670096C1AE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "OpenPokeMap/View Controllers/ViewController.swift"; sourceTree = "<group>"; };
+		17F5713D1D97F9920096C1AE /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingController.swift; path = "OpenPokeMap/View Controllers/SettingController.swift"; sourceTree = "<group>"; };
+		17F5713E1D97F9920096C1AE /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = "OpenPokeMap/View Controllers/TabBarController.swift"; sourceTree = "<group>"; };
+		17F571411D97F9BF0096C1AE /* AboutPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageController.swift; path = "OpenPokeMap/View Controllers/AboutPageController.swift"; sourceTree = "<group>"; };
+		17F571431D97F9F10096C1AE /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIAlertController.swift; path = OpenPokeMap/Extensions/UIAlertController.swift; sourceTree = "<group>"; };
+		17F571471D97FA480096C1AE /* TabBarImageColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarImageColor.swift; path = OpenPokeMap/Extensions/TabBarImageColor.swift; sourceTree = "<group>"; };
+		17F571491D97FA8F0096C1AE /* Array+Unique.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Unique.swift"; path = "OpenPokeMap/Extensions/Array+Unique.swift"; sourceTree = "<group>"; };
 		17FA359D1D7C5A150037C4EC /* base_stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = base_stats.json; path = ../base_stats.json; sourceTree = "<group>"; };
 		17FA35A51D7C5B1B0037C4EC /* BaseStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStats.swift; sourceTree = "<group>"; };
 		17FA35AA1D7C5E6E0037C4EC /* CalculateIV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateIV.swift; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F571311D97EFB10096C1AE /* MapKit.framework in Frameworks */,
 				17682A041D9052C500D98562 /* Alamofire.framework in Frameworks */,
 				C31D670A3FE0785808ACEB3B /* Pods_OpenPokeMap.framework in Frameworks */,
 			);
@@ -104,6 +113,7 @@
 		073DEA10A308B1B9D7082034 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17F571301D97EFB10096C1AE /* MapKit.framework */,
 				17682A031D9052C500D98562 /* Alamofire.framework */,
 				B4F131A30DAF4029B7C7ED4B /* Pods_OpenPokeMap.framework */,
 			);
@@ -158,12 +168,9 @@
 				176829FB1D90477000D98562 /* OpenPokeMap.entitlements */,
 				17FA35A71D7C5B290037C4EC /* IV shit */,
 				176829FC1D904E0D00D98562 /* Backgrounding */,
-				177E62A71D708F7500842A62 /* AppDelegate.swift */,
-				170007481D7DB51400BE789D /* TabBarController.swift */,
-				177E62A91D708F7500842A62 /* ViewController.swift */,
-				177E62BA1D70993B00842A62 /* AboutPageController.swift */,
-				170007461D7DB3AF00BE789D /* HelpController.swift */,
-				1755266F1D840BC700BA9BA0 /* SettingController.swift */,
+				17F571321D97F8C80096C1AE /* App Delegate */,
+				17F571331D97F8E50096C1AE /* Extensions */,
+				17F571361D97F9530096C1AE /* View Controllers */,
 				17B5E4081D89CCEA00D20527 /* Reach.swift */,
 				177E62AB1D708F7500842A62 /* Main.storyboard */,
 				177E62B01D708F7500842A62 /* LaunchScreen.storyboard */,
@@ -175,12 +182,44 @@
 			path = OpenPokeMap;
 			sourceTree = "<group>";
 		};
+		17F571321D97F8C80096C1AE /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				17F571341D97F91B0096C1AE /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		17F571331D97F8E50096C1AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17F571431D97F9F10096C1AE /* UIAlertController.swift */,
+				17F571471D97FA480096C1AE /* TabBarImageColor.swift */,
+				17F571491D97FA8F0096C1AE /* Array+Unique.swift */,
+			);
+			name = Extensions;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		17F571361D97F9530096C1AE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17F571371D97F9670096C1AE /* HelpController.swift */,
+				17F571381D97F9670096C1AE /* IVViewController.swift */,
+				17F571391D97F9670096C1AE /* ViewController.swift */,
+				17F5713D1D97F9920096C1AE /* SettingController.swift */,
+				17F5713E1D97F9920096C1AE /* TabBarController.swift */,
+				17F571411D97F9BF0096C1AE /* AboutPageController.swift */,
+			);
+			name = "View Controllers";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		17FA35A71D7C5B290037C4EC /* IV shit */ = {
 			isa = PBXGroup;
 			children = (
 				17FA35A51D7C5B1B0037C4EC /* BaseStats.swift */,
 				17FA35AA1D7C5E6E0037C4EC /* CalculateIV.swift */,
-				173E0C431D7C8D3D0015ACA1 /* IVViewController.swift */,
 				173E0C5D1D7C97DC0015ACA1 /* StringUtils.swift */,
 				17FA359D1D7C5A150037C4EC /* base_stats.json */,
 			);
@@ -221,8 +260,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 177E62B61D708F7500842A62 /* Build configuration list for PBXNativeTarget "OpenPokeMap" */;
 			buildPhases = (
-				7E97DCCF2A8F2C7A241FE7FE /* [CP] Check Pods Manifest.lock */,
 				177E62A01D708F7500842A62 /* Sources */,
+				7E97DCCF2A8F2C7A241FE7FE /* [CP] Check Pods Manifest.lock */,
 				177E62A11D708F7500842A62 /* Frameworks */,
 				177E62A21D708F7500842A62 /* Resources */,
 				DE6588DE4269A2C0BF98E399 /* [CP] Embed Pods Frameworks */,
@@ -372,21 +411,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F5714A1D97FA8F0096C1AE /* Array+Unique.swift in Sources */,
+				17F571421D97F9BF0096C1AE /* AboutPageController.swift in Sources */,
 				17682A021D904E7A00D98562 /* ParseReponse.swift in Sources */,
-				175526701D840BC700BA9BA0 /* SettingController.swift in Sources */,
-				177E62AA1D708F7500842A62 /* ViewController.swift in Sources */,
+				17F571351D97F91B0096C1AE /* AppDelegate.swift in Sources */,
 				17FA35AB1D7C5E6E0037C4EC /* CalculateIV.swift in Sources */,
+				17F571401D97F9920096C1AE /* TabBarController.swift in Sources */,
 				176829FE1D904E4900D98562 /* MakeRequest.swift in Sources */,
-				173E0C441D7C8D3D0015ACA1 /* IVViewController.swift in Sources */,
 				17682A001D904E6E00D98562 /* NotificationFactory.swift in Sources */,
-				170007491D7DB51400BE789D /* TabBarController.swift in Sources */,
+				17F5713A1D97F9670096C1AE /* HelpController.swift in Sources */,
+				17F5713F1D97F9920096C1AE /* SettingController.swift in Sources */,
 				173E0C5E1D7C97DC0015ACA1 /* StringUtils.swift in Sources */,
-				177E62BB1D70993B00842A62 /* AboutPageController.swift in Sources */,
 				17FA35A61D7C5B1B0037C4EC /* BaseStats.swift in Sources */,
 				985D8C9D1D90D7B500D3A8EB /* PokemonInfo.swift in Sources */,
-				170007471D7DB3AF00BE789D /* HelpController.swift in Sources */,
+				17F571441D97F9F10096C1AE /* UIAlertController.swift in Sources */,
+				17F5713B1D97F9670096C1AE /* IVViewController.swift in Sources */,
+				17F571481D97FA480096C1AE /* TabBarImageColor.swift in Sources */,
+				17F5713C1D97F9670096C1AE /* ViewController.swift in Sources */,
 				17B5E4091D89CCEA00D20527 /* Reach.swift in Sources */,
-				177E62A81D708F7500842A62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
