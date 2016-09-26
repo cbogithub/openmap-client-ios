@@ -6,13 +6,14 @@
 //  Copyright © 2016 nullpixel Development. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import SwiftyJSON
 
 class PokemonInfo {
     static let infoURL = Bundle.main.url(forResource: "PokemonID", withExtension: "json")!
     private var infoData: Data? = nil
     private var parsedData: [Int: String]? = nil
+    private var imageCache = [Int: UIImage]()
     
     static var shared = PokemonInfo()
     
@@ -23,6 +24,24 @@ class PokemonInfo {
             return name
         }
         return nil
+    }
+    
+    func pokemonThumbnail(for id: Int) -> UIImage? {
+        if imageCache.keys.contains(id) {
+            return imageCache[id]
+        } else {
+            if let imageURL = URL(string: "https://ugc.pokevision.com/images/pokemon/\(id).png"), let data = try? Data(contentsOf: imageURL), let image = UIImage(data: data) {
+                imageCache[id] = image
+                return image
+            }
+        }
+        return nil
+    }
+    
+    func pokemonThumbnail(for id: Int, completionHandler: @escaping (UIImage?) -> Void) {
+        OperationQueue().addOperation {
+            completionHandler(self.pokemonThumbnail(for: id))
+        }
     }
     
     private func refreshInfo() {

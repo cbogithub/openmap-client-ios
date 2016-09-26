@@ -26,7 +26,7 @@ class MakeRequest {
                     let json = JSON(value)
                     print("JSON: \(json)")
                     
-                    ParseResponse().parseResponse(json: json)
+                    ResponseParser.parseResponse(json: json)
                 }
 
 //        let json = try! Data(contentsOf: Bundle.main.url(forResource: "test_resp", withExtension: "json")!)

@@ -57,7 +57,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             if UIApplication.shared.applicationState == .active {
                 print("App is active")
             } else {
-                print("App is backgrounded. Latitude: \(coord.latitude)")
+                print("App is backgrounded. Latitude: \(coord.latitude) - Longitude: \(coord.longitude)")
                 MakeRequest().makeRequest(lat: coord.latitude, lng: coord.longitude)
             }
         }
@@ -103,8 +103,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if network {
             print("Displaying no internet alert")
             timer.invalidate()
-            let alertController = UIAlertController(title: "No Internet.", message: "Dangit. You need the internet to use this app.", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+            let alertController = UIAlertController(title: "No Internet", message: "Dang it. You need the internet to use this app.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
                 self.checkInternet()
                 })
             
