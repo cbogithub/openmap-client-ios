@@ -6,10 +6,9 @@
 //  Copyright © 2016 nullpixel Development. All rights reserved.
 //
 import UIKit
-import CoreLocation
 import WebKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController {
     
     private static var __once: () = {
                 print("Connected via WWAN")
@@ -24,19 +23,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        locationManager.startUpdatingLocation()
         _ =  Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(ViewController.checkInternet), userInfo: nil, repeats: true)
         
         setupWebView()
         reloadWebview()
         
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: Notification.Name.UIApplicationWillResignActive, object: nil)
-    }
-    
-    func appMovedToBackground() {
-        print("App moved to background!")
     }
     
     private func setupWebView() {
@@ -61,14 +53,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     struct Static {
         static var dispatchOnceToken: Int = 0
     }
-    
-    lazy var locationManager: CLLocationManager! = {
-        let manager = CLLocationManager()
-        manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.delegate = self
-        manager.requestAlwaysAuthorization()
-        return manager
-    }()
     
     func checkInternet() {
         let reachability = Reachability()!
@@ -118,23 +102,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 })
             
             alertController.show()
-        }
-    }
-    
-    // MARK: - CLLocationManagerDelegate
-    
-    func locationManager(_ manager: CLLocationManager,
-                         didUpdateLocations locations: [CLLocation]){
-        let locationArray = locations
-        if let locationObj = locationArray.last {
-            let coord = locationObj.coordinate
-            
-            if UIApplication.shared.applicationState == .active {
-                print("App is active")
-            } else {
-                print("App is backgrounded. Latitude: \(coord.latitude)")
-                MakeRequest().makeRequest(lat: coord.latitude, lng: coord.longitude)
-            }
         }
     }
     

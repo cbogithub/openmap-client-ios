@@ -21,22 +21,31 @@ class AboutPageController: UITableViewController {
                 UIApplication.shared.openURL(url)
             }
         }
-        else if (indexPath as NSIndexPath).row == 2 && (indexPath as NSIndexPath).section == 0 {
+        else if (indexPath as NSIndexPath).row == 0 && (indexPath as NSIndexPath).section == 1 {
             if let url = URL(string: "https://keybase.io/nullpixel") , UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.openURL(url)
             }
         }
-        else if (indexPath as NSIndexPath).row == 3 && (indexPath as NSIndexPath).section == 0 {
+        else if (indexPath as NSIndexPath).row == 1 && (indexPath as NSIndexPath).section == 1 {
             if let url = URL(string: "https://keybase.io/pwnlambda") , UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.openURL(url)
             }
-        } else if (indexPath as NSIndexPath).row == 4 && (indexPath as NSIndexPath).section == 0 {
+        } else if (indexPath as NSIndexPath).row == 2 && (indexPath as NSIndexPath).section == 1 {
+            if let url = URL(string: "https://github.com/joelfi") , UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.openURL(url)
+            }
+        }else if (indexPath as NSIndexPath).row == 3 && (indexPath as NSIndexPath).section == 1 {
+            if let url = URL(string: "https://github.com/femot/") , UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.openURL(url)
+            }
+        }else if (indexPath as NSIndexPath).row == 4 && (indexPath as NSIndexPath).section == 1 {
             if let url = URL(string: "https://github.com/pogointel") , UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.openURL(url)
             }
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
+        print("deselected")
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
